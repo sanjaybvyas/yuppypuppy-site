@@ -231,7 +231,7 @@ nav.scrolled { padding: 0.5rem 2rem; background: rgba(13,2,33,0.95); border-bott
 /* Hero trust bar */
 .hero-trust {
   display: flex; gap: 2rem; justify-content: center; align-items: center;
-  margin-top: 3.5rem; flex-wrap: wrap;
+  margin-top: 2rem; flex-wrap: wrap;
   animation: fadeInUp 0.8s ease-out 0.5s both;
 }
 .trust-badge {
@@ -251,7 +251,7 @@ nav.scrolled { padding: 0.5rem 2rem; background: rgba(13,2,33,0.95); border-bott
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
 
 /* ===== SECTIONS ===== */
-section { padding: 6rem 2rem; position: relative; }
+section { padding: 3.5rem 2rem; position: relative; }
 .section-inner { max-width: 1200px; margin: 0 auto; }
 .section-label {
   display: inline-flex; align-items: center; gap: 8px;
@@ -273,7 +273,7 @@ section { padding: 6rem 2rem; position: relative; }
 /* ===== SERVICES ===== */
 .services-grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem; margin-top: 3rem;
+  gap: 1.5rem; margin-top: 2rem;
 }
 .service-card {
   background: rgba(255,255,255,0.02); border: 1px solid rgba(0,245,212,0.08);
@@ -311,7 +311,7 @@ section { padding: 6rem 2rem; position: relative; }
 
 /* ===== PARALLAX DIVIDER ===== */
 .parallax-divider {
-  height: 300px; position: relative; overflow: hidden;
+  height: 160px; position: relative; overflow: hidden;
   display: flex; align-items: center; justify-content: center;
   background: linear-gradient(135deg, rgba(0,245,212,0.05), rgba(191,90,242,0.05));
 }
@@ -334,7 +334,7 @@ section { padding: 6rem 2rem; position: relative; }
 
 /* ===== REVIEWS ===== */
 .reviews-section { background: linear-gradient(180deg, rgba(0,245,212,0.02), transparent, rgba(191,90,242,0.02)); }
-.reviews-wrapper { overflow: hidden; margin-top: 3rem; }
+.reviews-wrapper { overflow: hidden; margin-top: 2rem; }
 .reviews-auto {
   display: flex; gap: 1.5rem; width: max-content;
   animation: scrollReviews 35s linear infinite;
@@ -363,7 +363,7 @@ section { padding: 6rem 2rem; position: relative; }
 /* ===== WHY US ===== */
 .trust-grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem; margin-top: 3rem;
+  gap: 1.5rem; margin-top: 2rem;
 }
 .trust-item {
   padding: 2rem 1.5rem; text-align: center; border-radius: 20px;
@@ -378,7 +378,7 @@ section { padding: 6rem 2rem; position: relative; }
 /* ===== BOOKING FORM ===== */
 .booking-section { background: linear-gradient(180deg, transparent, rgba(0,245,212,0.03), transparent); }
 .form-container {
-  max-width: 650px; margin: 3rem auto 0;
+  max-width: 650px; margin: 2rem auto 0;
   background: rgba(255,255,255,0.03); border: 1px solid rgba(0,245,212,0.1);
   border-radius: 24px; padding: 3rem; position: relative; overflow: hidden;
 }
@@ -424,7 +424,7 @@ section { padding: 6rem 2rem; position: relative; }
 
 /* ===== FOOTER ===== */
 footer {
-  padding: 4rem 2rem calc(2rem + env(safe-area-inset-bottom, 0px));
+  padding: 2.5rem 2rem calc(1.5rem + env(safe-area-inset-bottom, 0px));
   background: rgba(0,0,0,0.4);
   border-top: 1px solid rgba(0,245,212,0.06);
 }
@@ -494,10 +494,10 @@ footer {
   .form-row { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
   .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
-  section { padding: 4rem 1.5rem; }
+  section { padding: 2.5rem 1.5rem; }
   .review-card { min-width: 290px; }
   .form-container { padding: 2rem 1.5rem; }
-  .parallax-divider { height: 200px; }
+  .parallax-divider { height: 120px; }
 }
 @media (max-width: 480px) {
   .hero h1 { font-size: 2.1rem; }
@@ -620,7 +620,7 @@ a, button, .service-card, .trust-item, .nav-cta, .btn-primary, .btn-secondary, .
 /* ===== ANIMATED BONE DIVIDER ===== */
 .bone-divider {
   display: flex; align-items: center; justify-content: center; gap: 1.5rem;
-  padding: 2.5rem 0; opacity: 0.15; overflow: hidden;
+  padding: 1rem 0; opacity: 0.15; overflow: hidden;
 }
 .bone-divider .bone {
   font-size: 1.4rem; display: inline-block;
@@ -849,19 +849,15 @@ a, button, .service-card, .trust-item, .nav-cta, .btn-primary, .btn-secondary, .
   <div class="section-inner" style="text-align:center;">
     <div class="section-label reveal">Ready?</div>
     <h2 class="section-title reveal">Request Your Appointment</h2>
-    <p class="section-subtitle reveal" style="margin:0 auto;">Fill out the form below &#8212; your request is texted and emailed directly to us. We'll personally reach out to confirm your private appointment.</p>
+    <p class="section-subtitle reveal" style="margin:0 auto;">Quick form &#8212; your request is texted and emailed directly to us. We'll reach out to confirm your private appointment.</p>
     <div class="glow-line reveal" style="margin:1.5rem auto;"></div>
     <div class="form-container reveal">
       <form class="form-inner" id="bookingForm" onsubmit="handleSubmit(event)">
+        <div class="form-group"><label for="fname">Your Name</label><input type="text" id="fname" name="name" placeholder="First & Last" required autocomplete="name"></div>
         <div class="form-row">
-          <div class="form-group"><label for="fname">Your Name</label><input type="text" id="fname" name="name" placeholder="First & Last" required autocomplete="name"></div>
-          <div class="form-group"><label for="phone">Phone / Text</label><input type="tel" id="phone" name="phone" placeholder="(803) 555-1234" required autocomplete="tel"></div>
-        </div>
-        <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email"></div>
-        <div class="form-row">
-          <div class="form-group"><label for="petname">Pet's Name</label><input type="text" id="petname" name="petname" placeholder="Your fur baby's name" required></div>
+          <div class="form-group"><label for="petname">Dog's Name</label><input type="text" id="petname" name="petname" placeholder="Your pup's name" required></div>
           <div class="form-group"><label for="breed">Breed</label><input type="text" id="breed" name="breed" placeholder="e.g. Golden Retriever" required list="breedList">
-            <datalist id="breedList"><option value="Labrador Retriever"><option value="Golden Retriever"><option value="German Shepherd"><option value="French Bulldog"><option value="Bulldog"><option value="Poodle"><option value="Beagle"><option value="Rottweiler"><option value="Yorkshire Terrier"><option value="Dachshund"><option value="Boxer"><option value="Shih Tzu"><option value="Siberian Husky"><option value="Cavalier King Charles Spaniel"><option value="Doberman Pinscher"><option value="Miniature Schnauzer"><option value="Great Dane"><option value="Pomeranian"><option value="Chihuahua"><option value="Maltese"><option value="Jack Russell Terrier"><option value="Cocker Spaniel"><option value="Pitbull"><option value="Boston Terrier"><option value="Bernese Mountain Dog"><option value="Havanese"><option value="Mixed Breed"><option value="Cat"><option value="Other"></datalist></div>
+            <datalist id="breedList"><option value="Labrador Retriever"><option value="Golden Retriever"><option value="German Shepherd"><option value="French Bulldog"><option value="Bulldog"><option value="Poodle"><option value="Beagle"><option value="Rottweiler"><option value="Yorkshire Terrier"><option value="Dachshund"><option value="Boxer"><option value="Shih Tzu"><option value="Siberian Husky"><option value="Cavalier King Charles Spaniel"><option value="Doberman Pinscher"><option value="Miniature Schnauzer"><option value="Great Dane"><option value="Pomeranian"><option value="Chihuahua"><option value="Maltese"><option value="Jack Russell Terrier"><option value="Cocker Spaniel"><option value="Pitbull"><option value="Boston Terrier"><option value="Bernese Mountain Dog"><option value="Havanese"><option value="Mixed Breed"><option value="Other"></datalist></div>
         </div>
         <div class="form-group"><label for="service">Service Requested</label>
           <select id="service" name="service" required>
@@ -873,29 +869,12 @@ a, button, .service-card, .trust-item, .nav-cta, .btn-primary, .btn-secondary, .
             <option value="Multiple Services">&#128203; Multiple Services</option>
           </select>
         </div>
-        <div class="form-row">
-          <div class="form-group"><label for="prefdate">Preferred Date</label><input type="date" id="prefdate" name="prefdate" min="" style="color-scheme:dark"></div>
-          <div class="form-group"><label for="preftime">Preferred Time</label>
-            <select id="preftime" name="preftime">
-              <option value="" selected>No preference</option>
-              <option value="09:00">9:00 AM</option>
-              <option value="10:00">10:00 AM</option>
-              <option value="11:00">11:00 AM</option>
-              <option value="12:00">12:00 PM</option>
-              <option value="13:00">1:00 PM</option>
-              <option value="14:00">2:00 PM</option>
-              <option value="15:00">3:00 PM</option>
-              <option value="16:00">4:00 PM</option>
-            </select></div>
-        </div>
-        <div class="form-group"><label for="notes">Anything Else? <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text-muted)">(optional)</span></label>
-          <textarea id="notes" name="notes" placeholder="Special needs, questions, etc."></textarea></div>
+        <div class="form-group"><label for="prefdate">Preferred Date</label><input type="date" id="prefdate" name="prefdate" min="" style="color-scheme:dark" required></div>
         <button type="submit" class="form-submit">Send Request &#8594;</button>
         <input type="hidden" name="_subject" value="New Yuppy Puppy Appointment Request">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="#">
         <input type="hidden" name="_template" value="table">
-        <p class="form-note">&#128241; Your request is texted to 803-980-7387 & emailed to us instantly. We respond within hours. No spam, ever.</p>
+        <p class="form-note">&#128241; Your request is texted to 803-980-7387 & emailed to us instantly. We'll reach out to confirm!</p>
       </form>
     </div>
   </div>
@@ -950,14 +929,8 @@ window.addEventListener('scroll', () => nb.classList.toggle('scrolled', window.s
 document.getElementById('mobileToggle').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('open'));
 document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open')));
 
-// Phone format
 // Set min date on date picker to today
 document.getElementById('prefdate').min = new Date().toISOString().split('T')[0];
-
-document.getElementById('phone').addEventListener('input', function(e) {
-  let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
-  e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
-});
 
 // Form submit &#8212; emails via FormSubmit.co + opens SMS to owner
 function handleSubmit(e) {
@@ -965,15 +938,13 @@ function handleSubmit(e) {
   const fd = new FormData(e.target);
   const d = Object.fromEntries(fd);
   var dateStr = d.prefdate || 'Flexible';
-  var timeStr = d.preftime ? new Date('2000-01-01T' + d.preftime).toLocaleTimeString('en-US', {hour:'numeric',minute:'2-digit'}) : 'Flexible';
 
   fetch('https://formsubmit.co/ajax/yuppypuppysc@gmail.com', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
     body: JSON.stringify({
-      name: d.name, phone: d.phone, email: d.email, petname: d.petname,
-      breed: d.breed, service: d.service, preferred_date: dateStr, preferred_time: timeStr,
-      notes: d.notes || 'None',
+      name: d.name, dog_name: d.petname,
+      breed: d.breed, service: d.service, preferred_date: dateStr,
       _subject: 'New Appointment Request \u2014 ' + d.petname + ' (' + d.service + ') ' + dateStr
     })
   }).then(r => r.json()).then(data => {
@@ -981,10 +952,9 @@ function handleSubmit(e) {
   }).catch(err => console.log('Email fallback needed:', err));
 
   const smsBody = encodeURIComponent(
-    'NEW BOOKING REQUEST\nName: ' + d.name + '\nPhone: ' + d.phone +
-    '\nEmail: ' + d.email + '\nPet: ' + d.petname + ' (' + d.breed + ')' +
-    '\nService: ' + d.service + '\nDate: ' + dateStr + ' @ ' + timeStr +
-    (d.notes ? '\nNotes: ' + d.notes : '')
+    'NEW BOOKING REQUEST\nName: ' + d.name +
+    '\nDog: ' + d.petname + ' (' + d.breed + ')' +
+    '\nService: ' + d.service + '\nDate: ' + dateStr
   );
   const smsLink = document.createElement('a');
   smsLink.href = 'sms:8039807387&body=' + smsBody;
