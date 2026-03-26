@@ -4,195 +4,351 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#0d0221">
-<title>Yuppy Puppy Pet Spa & Boarding | Rock Hill SC</title>
-<meta name="description" content="Rock Hill SC's most trusted private pet spa since 2008. Exclusive one-on-one grooming, luxury baths, private boarding & daycare. Text 803-980-7387 to book.">
+<title>Yuppy Puppy Pet Spa &amp; Boarding | Rock Hill SC</title>
+<meta name="description" content="Rock Hill SC's most trusted private pet spa since 2008. Exclusive one-on-one grooming, luxury baths, private boarding &amp; daycare. Text 803-980-7387 to book.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#0d0221;--bg2:#1a0a3e;--teal:#00f5d4;--purple:#9b59f5;--white:#fff;--muted:#b8a9cc;--card:rgba(255,255,255,0.05)}
+:root{--bg:#0a0118;--bg2:#150830;--teal:#00f5d4;--gold:#ffb347;--pink:#ff6b9d;--purple:#b06aff;--white:#fff;--muted:#c4b5d9;--card:rgba(255,255,255,0.06);--glow:rgba(0,245,212,0.12)}
 html{scroll-behavior:smooth}
-body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:var(--teal);text-decoration:none}
 a:hover{opacity:0.85}
 
+/* PAWS BACKGROUND */
+body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:0.025;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='60' height='60'%3E%3Ctext x='10' y='50' font-size='30'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E");background-repeat:repeat;background-size:80px 80px}
+
 /* NAV */
-nav{position:sticky;top:0;z-index:100;background:rgba(13,2,33,0.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,245,212,0.1);padding:0.8rem 1.5rem}
-.nav-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
-.logo{font-weight:800;font-size:1.3rem;color:var(--teal)}
-.logo small{display:block;font-size:0.6rem;font-weight:400;color:var(--muted);letter-spacing:2px;text-transform:uppercase}
-.nav-links{display:flex;gap:1.2rem;align-items:center;list-style:none;flex-wrap:wrap}
-.nav-links a{color:var(--muted);font-size:0.85rem;font-weight:500}
+nav{position:sticky;top:0;z-index:100;background:rgba(10,1,24,0.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,245,212,0.12);padding:0.8rem 1.5rem}
+.nav-inner{max-width:920px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;font-size:1.3rem;color:var(--teal);display:flex;align-items:center;gap:0.4rem}
+.logo-paw{font-size:1.5rem;filter:drop-shadow(0 0 6px rgba(0,245,212,0.4))}
+.logo small{display:block;font-size:0.55rem;font-weight:400;color:var(--muted);letter-spacing:2px;text-transform:uppercase}
+.nav-links{display:flex;gap:1rem;align-items:center;list-style:none;flex-wrap:wrap}
+.nav-links a{color:var(--muted);font-size:0.85rem;font-weight:500;transition:color 0.2s}
 .nav-links a:hover{color:var(--teal)}
-.nav-cta{background:var(--teal);color:var(--bg);padding:0.45rem 1.1rem;border-radius:50px;font-weight:700;font-size:0.8rem}
+.nav-cta{background:linear-gradient(135deg,var(--teal),#0ea5a0);color:var(--bg);padding:0.5rem 1.2rem;border-radius:50px;font-weight:700;font-size:0.8rem;box-shadow:0 0 20px rgba(0,245,212,0.25);transition:box-shadow 0.3s,transform 0.2s}
+.nav-cta:hover{box-shadow:0 0 30px rgba(0,245,212,0.4);transform:translateY(-1px);opacity:1;color:var(--bg)}
 
 /* SECTIONS */
-.section{padding:2.5rem 1.5rem;max-width:900px;margin:0 auto}
+.section{padding:2.5rem 1.5rem;max-width:920px;margin:0 auto;position:relative}
 .section-sm{padding:1.5rem 1.5rem}
-h2{font-size:1.6rem;font-weight:800;margin-bottom:0.8rem;background:linear-gradient(135deg,var(--white),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.label{font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--teal);font-weight:600;margin-bottom:0.4rem}
+h2{font-size:1.7rem;font-weight:800;margin-bottom:0.8rem;background:linear-gradient(135deg,var(--white) 30%,var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.label{font-size:0.7rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:0.4rem}
 .subtitle{color:var(--muted);font-size:0.95rem;margin-bottom:1.2rem}
 
+/* FADE IN */
+.fade-in{opacity:0;transform:translateY(25px);transition:opacity 0.7s ease,transform 0.7s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+
 /* HERO */
-.hero{text-align:center;padding:4rem 1.5rem 2rem}
-.hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.1;margin-bottom:0.8rem;background:linear-gradient(135deg,var(--white) 20%,var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero p{color:var(--muted);font-size:1rem;max-width:550px;margin:0 auto 1.5rem}
+.hero{text-align:center;padding:3.5rem 1.5rem 2rem;position:relative}
+.hero-badge{display:inline-flex;align-items:center;gap:0.4rem;background:rgba(255,179,71,0.12);border:1px solid rgba(255,179,71,0.25);border-radius:50px;padding:0.35rem 1rem;margin-bottom:1rem;font-size:0.75rem;color:var(--gold);font-weight:600}
+.hero h1{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:800;line-height:1.08;margin-bottom:0.8rem;background:linear-gradient(135deg,var(--white) 20%,var(--teal) 80%,var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{color:var(--muted);font-size:1rem;max-width:560px;margin:0 auto 1.5rem}
 .hero-btns{display:flex;gap:0.8rem;justify-content:center;flex-wrap:wrap}
-.btn{display:inline-block;padding:0.7rem 1.8rem;border-radius:50px;font-weight:700;font-size:0.9rem;border:none;cursor:pointer;transition:transform 0.2s}
-.btn:hover{transform:translateY(-1px)}
-.btn-primary{background:var(--teal);color:var(--bg)}
-.btn-secondary{border:1px solid var(--purple);color:var(--purple);background:transparent}
+.btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.75rem 1.8rem;border-radius:50px;font-weight:700;font-size:0.9rem;border:none;cursor:pointer;transition:transform 0.2s,box-shadow 0.3s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(135deg,var(--teal),#0ea5a0);color:var(--bg);box-shadow:0 4px 25px rgba(0,245,212,0.3)}
+.btn-primary:hover{box-shadow:0 6px 35px rgba(0,245,212,0.45);color:var(--bg);opacity:1}
+.btn-secondary{border:1.5px solid var(--purple);color:var(--purple);background:transparent}
+.btn-secondary:hover{background:rgba(176,106,255,0.1);color:var(--purple);opacity:1}
+.hero-dogs{font-size:2rem;margin-top:1.2rem;letter-spacing:0.5rem;opacity:0.7;animation:wagTail 3s ease-in-out infinite}
+@keyframes wagTail{0%,100%{transform:rotate(0deg)}25%{transform:rotate(2deg)}75%{transform:rotate(-2deg)}}
 
 /* CARDS */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem}
-.card{background:var(--card);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:1.4rem;transition:border-color 0.3s}
-.card:hover{border-color:rgba(0,245,212,0.3)}
+.card{background:var(--card);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:1.4rem;transition:transform 0.3s,border-color 0.3s,box-shadow 0.3s;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--purple));opacity:0;transition:opacity 0.3s}
+.card:hover{transform:translateY(-6px);border-color:rgba(0,245,212,0.3);box-shadow:0 12px 40px rgba(0,245,212,0.1)}
+.card:hover::before{opacity:1}
 .card h3{font-size:1rem;margin-bottom:0.3rem;color:var(--teal)}
 .card p{font-size:0.85rem;color:var(--muted);line-height:1.5}
-.card .icon{font-size:1.8rem;margin-bottom:0.5rem}
+.card .icon{font-size:2rem;margin-bottom:0.6rem;display:block}
+.card .price-hint{font-size:0.7rem;color:var(--gold);margin-top:0.5rem;font-weight:600}
 
 /* REVIEWS */
 .reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin-top:1rem}
-.review{background:var(--card);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:1.4rem}
-.review .stars{color:gold;font-size:0.9rem;margin-bottom:0.4rem}
+.review{background:var(--card);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:1.4rem;transition:transform 0.3s,border-color 0.3s;position:relative}
+.review:hover{transform:translateY(-3px);border-color:rgba(255,179,71,0.25)}
+.review .stars{color:#ffd700;font-size:1rem;margin-bottom:0.4rem;letter-spacing:2px}
 .review p{font-size:0.88rem;color:var(--muted);font-style:italic;line-height:1.5}
 .review .name{font-size:0.8rem;color:var(--teal);margin-top:0.5rem;font-style:normal;font-weight:600}
+.review .dog-name{font-size:0.7rem;color:var(--gold);font-style:normal}
 
 /* FORM */
-.form-wrap{background:var(--card);border:1px solid rgba(0,245,212,0.15);border-radius:18px;padding:2rem;max-width:550px;margin:1rem auto 0}
+.form-wrap{background:linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.03));border:1px solid rgba(0,245,212,0.15);border-radius:20px;padding:2rem;max-width:560px;margin:1rem auto 0}
 .form-grid{display:grid;gap:0.8rem}
-.form-grid label{font-size:0.8rem;color:var(--muted);font-weight:500;margin-bottom:0.2rem;display:block}
-.form-grid input,.form-grid select{width:100%;padding:0.75rem 0.9rem;border-radius:10px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.05);color:var(--white);font-family:inherit;font-size:16px;-webkit-appearance:none;appearance:none;min-height:44px}
-.form-grid input:focus,.form-grid select:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 2px rgba(0,245,212,0.15)}
+.form-grid label{font-size:0.8rem;color:var(--muted);font-weight:500;margin-bottom:0.2rem;display:flex;align-items:center;gap:0.3rem}
+.form-grid label .lbl-icon{font-size:0.9rem}
+.form-grid input,.form-grid select,.form-grid textarea{width:100%;padding:0.75rem 0.9rem;border-radius:10px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.05);color:var(--white);font-family:inherit;font-size:16px;-webkit-appearance:none;appearance:none;min-height:44px;transition:border-color 0.2s,box-shadow 0.2s}
+.form-grid input:focus,.form-grid select:focus,.form-grid textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(0,245,212,0.12)}
 .form-grid select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2300f5d4' d='M6 8L1 3h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:2rem}
 .form-grid select option{background:var(--bg);color:var(--white)}
-.form-submit{width:100%;padding:0.85rem;border:none;border-radius:12px;background:linear-gradient(135deg,var(--teal),#0d9488);color:var(--bg);font-family:inherit;font-weight:700;font-size:1rem;cursor:pointer;margin-top:0.5rem;transition:opacity 0.2s}
-.form-submit:hover{opacity:0.9}
+.form-grid textarea{min-height:60px;resize:vertical;font-size:14px}
+.form-submit{width:100%;padding:0.9rem;border:none;border-radius:12px;background:linear-gradient(135deg,var(--teal),#0d9488);color:var(--bg);font-family:inherit;font-weight:700;font-size:1rem;cursor:pointer;margin-top:0.5rem;transition:opacity 0.2s,box-shadow 0.3s,transform 0.2s;box-shadow:0 4px 20px rgba(0,245,212,0.25);display:flex;align-items:center;justify-content:center;gap:0.4rem}
+.form-submit:hover{opacity:0.92;box-shadow:0 6px 30px rgba(0,245,212,0.35);transform:translateY(-1px)}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:0.8rem}
 @media(max-width:500px){.form-row{grid-template-columns:1fr}}
 
 /* WHY US */
-.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0.8rem;margin-top:1rem}
-.why-item{text-align:center;padding:1rem;background:var(--card);border-radius:12px;border:1px solid rgba(255,255,255,0.06)}
-.why-item .num{font-size:1.8rem;font-weight:800;color:var(--teal)}
-.why-item p{font-size:0.8rem;color:var(--muted)}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0.8rem;margin-top:1rem}
+.why-item{text-align:center;padding:1.1rem 0.8rem;background:var(--card);border-radius:14px;border:1px solid rgba(255,255,255,0.06);transition:transform 0.3s,border-color 0.3s}
+.why-item:hover{transform:translateY(-3px);border-color:rgba(0,245,212,0.2)}
+.why-item .why-icon{font-size:1.3rem;margin-bottom:0.3rem}
+.why-item .num{font-size:1.9rem;font-weight:800;background:linear-gradient(135deg,var(--teal),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.why-item p{font-size:0.78rem;color:var(--muted)}
+
+/* HOURS BANNER */
+.hours-banner{text-align:center;padding:1rem 1.5rem;max-width:920px;margin:0 auto}
+.hours-inner{display:inline-flex;align-items:center;gap:0.6rem;background:rgba(255,179,71,0.08);border:1px solid rgba(255,179,71,0.2);border-radius:50px;padding:0.5rem 1.5rem;font-size:0.82rem;color:var(--gold);font-weight:500}
 
 /* FOOTER */
 footer{background:var(--bg2);border-top:1px solid rgba(0,245,212,0.1);padding:1.5rem;text-align:center}
 footer p{color:var(--muted);font-size:0.82rem;margin-bottom:0.3rem}
 footer a{color:var(--teal)}
 .contact-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:0.8rem}
+.contact-links a{display:inline-flex;align-items:center;gap:0.3rem;padding:0.4rem 0.8rem;border-radius:50px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);transition:border-color 0.2s,background 0.2s;font-size:0.85rem}
+.contact-links a:hover{border-color:rgba(0,245,212,0.3);background:rgba(0,245,212,0.06)}
+.footer-paws{font-size:1.2rem;letter-spacing:0.8rem;opacity:0.4;margin:0.6rem 0}
 
 /* DIVIDER */
-.divider{text-align:center;padding:0.4rem 0;opacity:0.12;font-size:0.9rem;letter-spacing:1.5rem}
+.divider{text-align:center;padding:0.5rem 0;font-size:1rem;letter-spacing:1rem;opacity:0.15}
 
 /* MODAL */
-.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:9999;align-items:center;justify-content:center}
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:9999;align-items:center;justify-content:center}
 .modal-overlay.active{display:flex}
-.modal{background:var(--bg2);border:1px solid rgba(0,245,212,0.2);border-radius:18px;padding:2rem;text-align:center;max-width:380px;margin:1rem}
+.modal{background:var(--bg2);border:1px solid rgba(0,245,212,0.25);border-radius:20px;padding:2rem;text-align:center;max-width:380px;margin:1rem;box-shadow:0 20px 60px rgba(0,0,0,0.5)}
+.modal .modal-icon{font-size:3rem;margin-bottom:0.5rem}
 .modal h3{color:var(--teal);font-size:1.3rem;margin-bottom:0.5rem}
-.modal p{color:var(--muted);font-size:0.9rem;margin-bottom:1rem}
-.modal button{background:var(--teal);color:var(--bg);border:none;padding:0.6rem 1.5rem;border-radius:50px;font-weight:700;cursor:pointer}
+.modal p{color:var(--muted);font-size:0.9rem;margin-bottom:1rem;line-height:1.5}
+.modal button{background:linear-gradient(135deg,var(--teal),#0ea5a0);color:var(--bg);border:none;padding:0.65rem 1.8rem;border-radius:50px;font-weight:700;cursor:pointer;font-size:0.9rem;box-shadow:0 4px 15px rgba(0,245,212,0.25)}
+
+/* FLOATING PAWS */
+.float-paw{position:fixed;font-size:1.2rem;opacity:0.04;pointer-events:none;z-index:0;animation:floatPaw 20s linear infinite}
+@keyframes floatPaw{0%{transform:translateY(100vh) rotate(0deg)}100%{transform:translateY(-100vh) rotate(360deg)}}
 
 @media(max-width:600px){
-  .nav-links{gap:0.8rem}
+  .nav-links{gap:0.7rem}
   .section{padding:2rem 1rem}
-  .hero{padding:3.5rem 1rem 1.5rem}
+  .hero{padding:3rem 1rem 1.5rem}
   .form-wrap{padding:1.3rem}
+  .hero h1{font-size:clamp(1.8rem,6vw,2.8rem)}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .hours-inner{flex-direction:column;gap:0.3rem}
 }
 </style>
 </head>
 <body>
 
+<!-- Floating paw accents -->
+<div class="float-paw" style="left:5%;animation-delay:0s;animation-duration:25s">&#128062;</div>
+<div class="float-paw" style="left:25%;animation-delay:5s;animation-duration:30s">&#129460;</div>
+<div class="float-paw" style="left:60%;animation-delay:10s;animation-duration:22s">&#128054;</div>
+<div class="float-paw" style="left:85%;animation-delay:3s;animation-duration:28s">&#128062;</div>
+<div class="float-paw" style="left:45%;animation-delay:8s;animation-duration:35s">&#129460;</div>
+
 <nav>
   <div class="nav-inner">
-    <div class="logo">YUPPY PUPPY<small>Private Pet Spa &bull; Since 2008</small></div>
+    <div class="logo"><span class="logo-paw">&#128062;</span><div>YUPPY PUPPY<small>Private Pet Spa &#x2022; Since 2008</small></div></div>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#book">Book</a></li>
-      <li><a href="sms:8039807387" target="_top" class="nav-cta">Text Us</a></li>
+      <li><a href="sms:8039807387" target="_top" class="nav-cta">&#128172; Text Us</a></li>
     </ul>
   </div>
 </nav>
 
-<div class="hero section">
-  <h1>Rock Hill's Premier Private Pet Experience</h1>
-  <p>Exclusive one-on-one grooming, boarding, daycare &amp; luxury baths. No shared spaces, no walk-ins. By private appointment only since 2008.</p>
+<div class="hero section fade-in">
+  <div class="hero-badge">&#11088; Trusted Since 2008 &#x2022; 100+ Five-Star Reviews</div>
+  <h1>Where Every Pup Gets the Royal Treatment &#128081;</h1>
+  <p>Exclusive one-on-one grooming, boarding, daycare &amp; luxury spa baths in Rock Hill, SC. No shared spaces, no walk-ins. Just your fur baby and our full attention.</p>
   <div class="hero-btns">
-    <a href="#book" class="btn btn-primary">Book Appointment</a>
-    <a href="tel:8039807387" target="_top" class="btn btn-secondary">Call 803-980-7387</a>
+    <a href="#book" class="btn btn-primary">&#128062; Book Appointment</a>
+    <a href="tel:8039807387" target="_top" class="btn btn-secondary">&#128222; Call 803-980-7387</a>
   </div>
+  <div class="hero-dogs">&#128054; &#128021; &#129454; &#128053; &#128029;</div>
 </div>
 
 <div class="divider">&#128062; &#129460; &#128054; &#129460; &#128062;</div>
 
-<div class="section" id="services">
-  <div class="label">Our Services</div>
-  <h2>Exclusive Private Pet Services</h2>
-  <p class="subtitle">Every session is one-on-one behind closed doors. Just your pet and our full attention.</p>
+<div class="section fade-in" id="services">
+  <div class="label">&#9996;&#65039; Our Services</div>
+  <h2>Pamper Your Pup, Private &amp; Personal</h2>
+  <p class="subtitle">Every session is one-on-one behind closed doors. Your pet gets undivided attention from start to finish.</p>
   <div class="cards">
-    <div class="card"><div class="icon">&#9989;</div><h3>Signature Grooming</h3><p>Full-service private grooming with breed-specific styling, hand-scissoring, and spa-quality finishing.</p></div>
-    <div class="card"><div class="icon">&#128166;</div><h3>Luxury Spa Bath</h3><p>Premium shampoos, conditioning treatments, blowout, nail trim, ear cleaning, and teeth brushing.</p></div>
-    <div class="card"><div class="icon">&#127769;</div><h3>Private Boarding</h3><p>Your pet gets the entire facility. Home-like environment with personalized feeding, play, and cuddle time.</p></div>
-    <div class="card"><div class="icon">&#9728;&#65039;</div><h3>Private Daycare</h3><p>One-on-one supervised play and socialization in a safe, clean, private environment.</p></div>
+    <div class="card">
+      <span class="icon">&#9988;&#65039;</span>
+      <h3>Signature Grooming</h3>
+      <p>Breed-specific styling, hand-scissoring, de-matting, and spa-quality finishing. Your pup leaves looking like a show dog!</p>
+      <div class="price-hint">&#128176; Custom pricing by breed</div>
+    </div>
+    <div class="card">
+      <span class="icon">&#128704;</span>
+      <h3>Luxury Spa Bath</h3>
+      <p>Premium shampoos, deep conditioning, blueberry facial, blowout, nail trim, ear cleaning &amp; teeth brushing.</p>
+      <div class="price-hint">&#128150; The full pamper package</div>
+    </div>
+    <div class="card">
+      <span class="icon">&#127769;</span>
+      <h3>Private Boarding</h3>
+      <p>Your pet gets the entire facility overnight. Home-like environment with personalized feeding, play &amp; cuddle time.</p>
+      <div class="price-hint">&#127968; Like a second home</div>
+    </div>
+    <div class="card">
+      <span class="icon">&#127774;</span>
+      <h3>Private Daycare</h3>
+      <p>One-on-one supervised play, enrichment activities, and socialization in a safe, clean, private space.</p>
+      <div class="price-hint">&#127934; Fun all day long</div>
+    </div>
   </div>
 </div>
 
-<div class="divider">&#129460; &#128062; &#129460; &#128054; &#129460;</div>
+<div class="divider">&#129460; &#128054; &#128062; &#128054; &#129460;</div>
 
-<div class="section" id="reviews">
-  <div class="label">Client Love</div>
-  <h2>What Pet Parents Say</h2>
-  <p class="subtitle">100+ five-star reviews from real families.</p>
+<div class="section fade-in" id="reviews">
+  <div class="label">&#128149; Client Love</div>
+  <h2>What Pet Parents Are Saying</h2>
+  <p class="subtitle">100+ five-star reviews from happy families &amp; wagging tails.</p>
   <div class="reviews-grid">
     <div class="review">
       <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
       <p>"Yuppy Puppy is the ONLY place I trust with my babies. The one-on-one attention is everything. My dogs come home happy every single time."</p>
-      <div class="name">- Sarah M.</div>
+      <div class="name">&#128054; Sarah M.</div>
+      <div class="dog-name">Mom to Bella &amp; Max</div>
     </div>
     <div class="review">
       <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
       <p>"We've been going here since 2010. The private boarding is amazing - it's like a second home for our pup. Can't recommend enough!"</p>
-      <div class="name">- James &amp; Linda R.</div>
+      <div class="name">&#128021; James &amp; Linda R.</div>
+      <div class="dog-name">Parents of Cooper</div>
     </div>
     <div class="review">
       <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
       <p>"Best groomer in Rock Hill, hands down. They take their time and really care about each dog. Worth every penny."</p>
-      <div class="name">- Michelle T.</div>
+      <div class="name">&#129454; Michelle T.</div>
+      <div class="dog-name">Mom to Daisy</div>
     </div>
   </div>
 </div>
 
 <div class="divider">&#128062; &#129460; &#128054; &#129460; &#128062;</div>
 
-<div class="section section-sm" id="why">
-  <div class="label">Why Yuppy Puppy</div>
+<div class="section section-sm fade-in" id="why">
+  <div class="label">&#127942; Why Yuppy Puppy</div>
   <h2>What Sets Us Apart</h2>
   <div class="why-grid">
-    <div class="why-item"><div class="num">18+</div><p>Years of Experience</p></div>
-    <div class="why-item"><div class="num">100+</div><p>5-Star Reviews</p></div>
-    <div class="why-item"><div class="num">1:1</div><p>Private Sessions Only</p></div>
-    <div class="why-item"><div class="num">0</div><p>Shared Spaces</p></div>
+    <div class="why-item"><div class="why-icon">&#128197;</div><div class="num">18+</div><p>Years of Experience</p></div>
+    <div class="why-item"><div class="why-icon">&#11088;</div><div class="num">100+</div><p>5-Star Reviews</p></div>
+    <div class="why-item"><div class="why-icon">&#128149;</div><div class="num">1:1</div><p>Private Sessions Only</p></div>
+    <div class="why-item"><div class="why-icon">&#128274;</div><div class="num">0</div><p>Shared Spaces</p></div>
   </div>
 </div>
 
-<div class="divider">&#129460; &#128062; &#129460; &#128054; &#129460;</div>
+<div class="hours-banner fade-in">
+  <div class="hours-inner">
+    <span>&#128197;</span>
+    <span>Open Mon-Sat &#x2022; By Appointment Only &#x2022; Text or Call to Schedule</span>
+    <span>&#128062;</span>
+  </div>
+</div>
 
-<div class="section" id="book">
-  <div class="label" style="text-align:center">Ready?</div>
+<div class="divider">&#129460; &#128054; &#128062; &#128054; &#129460;</div>
+
+<div class="section fade-in" id="book">
+  <div class="label" style="text-align:center">&#128221; Ready to Book?</div>
   <h2 style="text-align:center">Request Your Appointment</h2>
-  <p class="subtitle" style="text-align:center;max-width:500px;margin:0 auto 1rem">Fill out the form below. Your request is texted and emailed directly to us. We'll confirm your appointment ASAP.</p>
+  <p class="subtitle" style="text-align:center;max-width:520px;margin:0 auto 1rem">Fill out the form below and we'll text &amp; email you back to confirm. It's that easy!</p>
   <div class="form-wrap">
     <form id="bookingForm" onsubmit="handleSubmit(event)">
       <div class="form-grid">
         <div class="form-row">
-          <div><label for="name">Your Name</label><input type="text" id="name" name="name" required placeholder="Jane Smith"></div>
-          <div><label for="petname">Pet's Name</label><input type="text" id="petname" name="petname" required placeholder="Buddy"></div>
+          <div><label for="name"><span class="lbl-icon">&#128100;</span> Your Name</label><input type="text" id="name" name="name" required placeholder="Jane Smith"></div>
+          <div><label for="petname"><span class="lbl-icon">&#128054;</span> Pet's Name</label><input type="text" id="petname" name="petname" required placeholder="Buddy"></div>
         </div>
-        <div><label for="breed">Breed</label><input type="text" id="breed" name="breed" required placeholder="Golden Retriever"></div>
-        <div><label for="service">Service Needed</label>
+        <div class="form-row">
+          <div><label for="breed"><span class="lbl-icon">&#129454;</span> Breed</label>
+            <select id="breed" name="breed" required>
+              <option value="">Select breed...</option>
+              <optgroup label="Small Breeds">
+                <option>Chihuahua</option>
+                <option>Yorkshire Terrier</option>
+                <option>Pomeranian</option>
+                <option>Shih Tzu</option>
+                <option>Maltese</option>
+                <option>Toy Poodle</option>
+                <option>Miniature Poodle</option>
+                <option>Dachshund</option>
+                <option>Cavalier King Charles</option>
+                <option>Havanese</option>
+                <option>Bichon Frise</option>
+                <option>Papillon</option>
+                <option>Miniature Schnauzer</option>
+                <option>Pekingese</option>
+                <option>Brussels Griffon</option>
+              </optgroup>
+              <optgroup label="Medium Breeds">
+                <option>Cocker Spaniel</option>
+                <option>Beagle</option>
+                <option>French Bulldog</option>
+                <option>English Bulldog</option>
+                <option>Australian Shepherd</option>
+                <option>Border Collie</option>
+                <option>Springer Spaniel</option>
+                <option>Shetland Sheepdog</option>
+                <option>Corgi</option>
+                <option>Basset Hound</option>
+                <option>Whippet</option>
+                <option>American Staffordshire</option>
+                <option>Standard Schnauzer</option>
+                <option>Brittany Spaniel</option>
+              </optgroup>
+              <optgroup label="Large Breeds">
+                <option>Golden Retriever</option>
+                <option>Labrador Retriever</option>
+                <option>German Shepherd</option>
+                <option>Standard Poodle</option>
+                <option>Goldendoodle</option>
+                <option>Labradoodle</option>
+                <option>Bernedoodle</option>
+                <option>Boxer</option>
+                <option>Husky</option>
+                <option>Doberman</option>
+                <option>Rottweiler</option>
+                <option>Weimaraner</option>
+                <option>Vizsla</option>
+                <option>Collie</option>
+                <option>Pit Bull</option>
+              </optgroup>
+              <optgroup label="Extra Large Breeds">
+                <option>Great Dane</option>
+                <option>Bernese Mountain Dog</option>
+                <option>Saint Bernard</option>
+                <option>Newfoundland</option>
+                <option>Great Pyrenees</option>
+                <option>Irish Wolfhound</option>
+                <option>Mastiff</option>
+                <option>Cane Corso</option>
+              </optgroup>
+              <optgroup label="Other">
+                <option>Mixed Breed / Other</option>
+              </optgroup>
+            </select>
+          </div>
+          <div><label for="size"><span class="lbl-icon">&#128207;</span> Dog Size</label>
+            <select id="size" name="size" required>
+              <option value="">Select size...</option>
+              <option>Small (under 20 lbs)</option>
+              <option>Medium (20-50 lbs)</option>
+              <option>Large (50-80 lbs)</option>
+              <option>Extra Large (80+ lbs)</option>
+            </select>
+          </div>
+        </div>
+        <div><label for="service"><span class="lbl-icon">&#9996;&#65039;</span> Service Needed</label>
           <select id="service" name="service" required>
             <option value="">Select a service...</option>
             <option>Signature Grooming</option>
@@ -200,10 +356,18 @@ footer a{color:var(--teal)}
             <option>Private Boarding</option>
             <option>Private Daycare</option>
             <option>Grooming + Boarding</option>
+            <option>Grooming + Daycare</option>
+            <option>Spa Bath + Nail Trim Only</option>
           </select>
         </div>
-        <div><label for="prefdate">Preferred Date</label><input type="date" id="prefdate" name="prefdate"></div>
-        <button type="submit" class="form-submit">Send Request &#128140;</button>
+        <div class="form-row">
+          <div><label for="prefdate"><span class="lbl-icon">&#128197;</span> Preferred Date</label><input type="date" id="prefdate" name="prefdate"></div>
+          <div><label for="phone"><span class="lbl-icon">&#128222;</span> Your Phone</label><input type="tel" id="phone" name="phone" placeholder="(803) 555-1234"></div>
+        </div>
+        <div><label for="notes"><span class="lbl-icon">&#128221;</span> Special Notes <span style="font-weight:400;opacity:0.6">(optional)</span></label>
+          <textarea id="notes" name="notes" placeholder="Anything we should know? Nervous pup, matted coat, special needs, first visit..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">&#128062; Send Appointment Request</button>
       </div>
     </form>
   </div>
@@ -213,19 +377,21 @@ footer a{color:var(--teal)}
   <div class="contact-links">
     <a href="tel:8039807387" target="_top">&#128222; 803-980-7387</a>
     <a href="sms:8039807387" target="_top">&#128172; Text Us</a>
-    <a href="mailto:yuppypuppysc@gmail.com" target="_top">&#9993; Email Us</a>
+    <a href="mailto:yuppypuppysc@gmail.com" target="_top">&#9993;&#65039; Email Us</a>
   </div>
   <p><strong style="color:var(--teal)">Yuppy Puppy Pet Spa &amp; Boarding</strong></p>
-  <p>Rock Hill, South Carolina | Owners: Sanjay &amp; Tivanie Vyas</p>
-  <p style="margin-top:0.5rem;opacity:0.5">&copy; 2008-2026 Yuppy Puppy Pet Spa. All rights reserved.</p>
+  <p>Rock Hill, South Carolina &#x2022; Serving the community since 2008</p>
+  <div class="footer-paws">&#128062; &#129460; &#128054; &#129460; &#128062;</div>
+  <p style="opacity:0.4;font-size:0.75rem">&copy; 2008-2026 Yuppy Puppy Pet Spa. All rights reserved.</p>
 </footer>
 
 <!-- Success Modal -->
 <div class="modal-overlay" id="successModal">
   <div class="modal">
-    <h3>&#128062; Request Sent!</h3>
-    <p>Your appointment request has been emailed and texted to us. We'll reach out shortly to confirm.</p>
-    <button onclick="document.getElementById('successModal').classList.remove('active')">Got It!</button>
+    <div class="modal-icon">&#128062;&#128149;</div>
+    <h3>Woof! Request Sent!</h3>
+    <p>Your appointment request has been emailed and texted directly to us. We'll reach out shortly to confirm your pup's visit!</p>
+    <button onclick="document.getElementById('successModal').classList.remove('active')">&#128054; Got It!</button>
   </div>
 </div>
 
@@ -236,6 +402,9 @@ function handleSubmit(e) {
   var fd = new FormData(form);
   var d = Object.fromEntries(fd);
   var dateStr = d.prefdate || 'Flexible';
+  var sizeStr = d.size || 'Not specified';
+  var notesStr = d.notes || 'None';
+  var phoneStr = d.phone || 'Not provided';
   var subj = 'New Appointment - ' + d.petname + ' (' + d.service + ') ' + dateStr;
 
   // 1) Email via FormSubmit.co
@@ -244,10 +413,13 @@ function handleSubmit(e) {
     headers: {'Content-Type':'application/json','Accept':'application/json'},
     body: JSON.stringify({
       name: d.name,
+      phone: phoneStr,
       dog_name: d.petname,
       breed: d.breed,
+      size: sizeStr,
       service: d.service,
       preferred_date: dateStr,
+      special_notes: notesStr,
       _subject: subj,
       _captcha: 'false',
       _template: 'table'
@@ -256,17 +428,19 @@ function handleSubmit(e) {
     console.log('Email sent:', data);
   }).catch(function(err){
     console.log('Email fallback:', err);
-    var body = 'Name: '+d.name+'%0ADog: '+d.petname+' ('+d.breed+')%0AService: '+d.service+'%0ADate: '+dateStr;
+    var body = 'Name: '+d.name+'%0APhone: '+phoneStr+'%0ADog: '+d.petname+' ('+d.breed+', '+sizeStr+')%0AService: '+d.service+'%0ADate: '+dateStr+'%0ANotes: '+notesStr;
     var w = window.top || window;
     w.location.href = 'mailto:yuppypuppysc@gmail.com?subject='+encodeURIComponent(subj)+'&body='+body;
   });
 
-  // 2) SMS - open Messages app with pre-filled text
+  // 2) SMS
   var smsBody = encodeURIComponent(
-    'Hi! New appointment request:\nName: ' + d.name +
-    '\nDog: ' + d.petname + ' (' + d.breed + ')' +
+    'New Yuppy Puppy Request!\nName: ' + d.name +
+    '\nPhone: ' + phoneStr +
+    '\nDog: ' + d.petname + ' (' + d.breed + ', ' + sizeStr + ')' +
     '\nService: ' + d.service +
-    '\nDate: ' + dateStr
+    '\nDate: ' + dateStr +
+    (notesStr !== 'None' ? '\nNotes: ' + notesStr : '')
   );
   var isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
   var smsUrl = isIOS
@@ -295,6 +469,18 @@ var nav = document.querySelector('nav');
 window.addEventListener('scroll', function() {
   if (window.scrollY > 50) nav.style.padding = '0.5rem 1.5rem';
   else nav.style.padding = '0.8rem 1.5rem';
+});
+
+// Scroll fade-in
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-in').forEach(function(el) {
+  observer.observe(el);
 });
 </script>
 </body>
