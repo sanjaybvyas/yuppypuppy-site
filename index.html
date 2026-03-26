@@ -1,1 +1,1136 @@
-updated
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Yuppy Puppy">
+<meta name="theme-color" content="#0d0221">
+<title>Yuppy Puppy Pet Spa & Boarding | Private Dog Grooming, Boarding & Daycare | Rock Hill SC</title>
+<meta name="description" content="Rock Hill SC's most trusted private pet spa since 2008. Exclusive one-on-one grooming, luxury baths, private boarding & daycare. 100+ five-star reviews. Text 803-980-7387 to book your VIP appointment.">
+<meta name="keywords" content="private dog grooming rock hill sc, pet spa rock hill, private dog boarding rock hill sc, luxury pet grooming south carolina, exclusive pet daycare rock hill, dog bath rock hill sc, yuppy puppy pet spa, best dog groomer rock hill, private pet boarding near me, one on one dog grooming">
+<meta property="og:title" content="Yuppy Puppy Pet Spa & Boarding | Rock Hill's Premier Private Pet Care">
+<meta property="og:description" content="Exclusive private pet grooming, boarding & daycare in Rock Hill SC since 2008. One-on-one attention. 100+ five-star reviews. Text to book.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.yuppypuppypetspa.com">
+<meta property="og:site_name" content="Yuppy Puppy Pet Spa & Boarding">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Yuppy Puppy Pet Spa & Boarding | Rock Hill SC">
+<meta name="twitter:description" content="Rock Hill's premier private pet spa. Exclusive one-on-one grooming, boarding & daycare since 2008.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.yuppypuppypetspa.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="https://static.elfsight.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PetStore",
+  "name": "Yuppy Puppy Pet Spa & Boarding",
+  "description": "Rock Hill SC's premier private pet grooming, boarding, daycare and bath spa. Exclusive one-on-one care since 2008.",
+  "telephone": "+1-803-980-7387",
+  "email": "yuppypuppysc@gmail.com",
+  "url": "https://www.yuppypuppypetspa.com",
+  "foundingDate": "2008",
+  "areaServed": { "@type": "City", "name": "Rock Hill", "containedInPlace": { "@type": "State", "name": "South Carolina" } },
+  "priceRange": "$$",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "100", "bestRating": "5" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Pet Care Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private Signature Grooming" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Luxury Spa Bath" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private Overnight Boarding" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private Daycare" } }
+    ]
+  }
+}
+</script>
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --purple-deep: #0d0221;
+  --purple-dark: #1a0a3e;
+  --purple-mid: #6c3fa0;
+  --purple-bright: #9b59f5;
+  --purple-light: #c49bff;
+  --neon-purple: #bf5af2;
+  --neon-pink: #ff2d78;
+  --neon-teal: #00f5d4;
+  --neon-green: #39ff14;
+  --neon-blue: #5ac8fa;
+  --teal-dark: #0d9488;
+  --teal-glow: rgba(0,245,212,0.15);
+  --gold: #ffd700;
+  --white: #ffffff;
+  --gray-light: #f0eaf8;
+  --text-muted: #b8a9cc;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; height: -webkit-fill-available; }
+
+/* Performance: content-visibility for below-fold sections */
+section:not(:first-of-type) { content-visibility: auto; contain-intrinsic-size: auto 800px; }
+
+/* Performance: will-change for animated elements */
+.orb, .service-card, .trust-item, .bone-divider span, .paw { will-change: transform; }
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--purple-deep);
+  color: var(--white);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: 100dvh;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ===== ANIMATED BACKGROUND ===== */
+.bg-glow {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%; height: 100dvh; z-index: -1;
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 20%, rgba(107,63,160,0.25) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(0,245,212,0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 40% at 60% 30%, rgba(191,90,242,0.12) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 50% at 30% 70%, rgba(57,255,20,0.04) 0%, transparent 60%),
+    var(--purple-deep);
+}
+/* Floating orbs */
+.orb {
+  position: fixed; border-radius: 50%; filter: blur(80px); pointer-events: none; z-index: -1;
+  animation: orbFloat 20s ease-in-out infinite alternate;
+}
+.orb-1 { width: 400px; height: 400px; top: 10%; left: -5%; background: rgba(191,90,242,0.12); }
+.orb-2 { width: 300px; height: 300px; bottom: 20%; right: -5%; background: rgba(0,245,212,0.08); animation-delay: -7s; animation-duration: 25s; }
+.orb-3 { width: 250px; height: 250px; top: 50%; left: 40%; background: rgba(57,255,20,0.05); animation-delay: -14s; animation-duration: 30s; }
+.orb-4 { width: 350px; height: 350px; top: 70%; right: 20%; background: rgba(0,245,212,0.05); animation-delay: -10s; animation-duration: 28s; }
+@keyframes orbFloat {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -40px) scale(1.1); }
+  66% { transform: translate(-20px, 30px) scale(0.9); }
+  100% { transform: translate(10px, -20px) scale(1.05); }
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--purple-deep); }
+::-webkit-scrollbar-thumb { background: linear-gradient(var(--neon-teal), var(--neon-purple)); border-radius: 3px; }
+
+/* ===== NAV ===== */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  padding: calc(1rem + env(safe-area-inset-top, 0px)) calc(2rem + env(safe-area-inset-right, 0px)) 1rem calc(2rem + env(safe-area-inset-left, 0px));
+  background: rgba(13,2,33,0.7);
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(24px) saturate(200%);
+  border-bottom: 1px solid rgba(0,245,212,0.08);
+  transition: all 0.4s cubic-bezier(0.16,1,0.3,1);
+}
+nav.scrolled { padding: 0.5rem 2rem; background: rgba(13,2,33,0.95); border-bottom-color: rgba(0,245,212,0.15); }
+.nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+.logo {
+  font-family: 'Space Grotesk', sans-serif; font-weight: 800; font-size: 1.5rem;
+  background: linear-gradient(135deg, var(--neon-teal), var(--neon-purple));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.logo span { font-weight: 400; opacity: 0.7; font-size: 0.7rem; display: block;
+  -webkit-text-fill-color: var(--text-muted); letter-spacing: 2.5px; text-transform: uppercase; }
+.nav-links { display: flex; gap: 1.8rem; list-style: none; }
+.nav-links a {
+  color: var(--text-muted); text-decoration: none; font-weight: 500;
+  font-size: 0.88rem; letter-spacing: 0.3px; transition: color 0.3s; position: relative;
+}
+.nav-links a::after {
+  content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px;
+  background: linear-gradient(90deg, var(--neon-teal), var(--neon-purple));
+  transition: width 0.3s cubic-bezier(0.16,1,0.3,1);
+}
+.nav-links a:hover { color: var(--neon-teal); }
+.nav-links a:hover::after { width: 100%; }
+.nav-cta {
+  background: linear-gradient(135deg, var(--neon-teal), var(--teal-dark));
+  color: var(--purple-deep); border: none; padding: 0.55rem 1.4rem; border-radius: 50px;
+  font-family: 'Outfit'; font-weight: 700; font-size: 0.82rem; cursor: pointer;
+  transition: all 0.3s; text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0,245,212,0.25);
+}
+.nav-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 30px rgba(0,245,212,0.4); }
+.mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.mobile-toggle span { display: block; width: 22px; height: 2px; background: var(--neon-teal); margin: 5px 0; transition: all 0.3s; border-radius: 2px; }
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh; min-height: 100dvh; display: flex; align-items: center; justify-content: center;
+  text-align: center; padding: 7rem 2rem 4rem; padding-bottom: calc(4rem + env(safe-area-inset-bottom, 0px)); position: relative;
+}
+.hero::before {
+  content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+  width: 700px; height: 700px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,245,212,0.08) 0%, rgba(191,90,242,0.06) 40%, transparent 70%);
+  filter: blur(60px); animation: heroPulse 5s ease-in-out infinite alternate;
+}
+@keyframes heroPulse { 0% { transform: translate(-50%,-50%) scale(1); } 100% { transform: translate(-50%,-50%) scale(1.3); } }
+
+.hero-content { position: relative; z-index: 1; max-width: 850px; }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(0,245,212,0.08); border: 1px solid rgba(0,245,212,0.2);
+  padding: 0.4rem 1.2rem; border-radius: 50px; font-size: 0.78rem;
+  color: var(--neon-teal); margin-bottom: 1.8rem;
+  animation: fadeInUp 0.8s ease-out;
+}
+.hero-badge .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--neon-teal); animation: blink 1.5s infinite; box-shadow: 0 0 8px var(--neon-teal); }
+@keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0.3; } }
+
+.hero h1 {
+  font-family: 'Space Grotesk'; font-size: clamp(2.6rem, 7vw, 5.2rem); font-weight: 800;
+  line-height: 1.05; margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, var(--white) 0%, var(--neon-teal) 40%, var(--neon-purple) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  animation: fadeInUp 0.8s ease-out 0.1s both, shimmer 6s ease-in-out infinite;
+  background-size: 200% 200%;
+}
+@keyframes shimmer { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+.hero p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem); color: var(--text-muted);
+  max-width: 600px; margin: 0 auto 2.5rem; line-height: 1.75;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+.hero-buttons {
+  display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--neon-teal), #0d9488);
+  color: var(--purple-deep); border: none; padding: 1rem 2.4rem; border-radius: 60px;
+  font-family: 'Outfit'; font-weight: 800; font-size: 1rem;
+  cursor: pointer; transition: all 0.4s cubic-bezier(0.16,1,0.3,1);
+  text-decoration: none; display: inline-flex; align-items: center; gap: 10px;
+  box-shadow: 0 8px 40px rgba(0,245,212,0.25);
+  letter-spacing: 0.3px;
+}
+.btn-primary:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 12px 50px rgba(0,245,212,0.4); }
+.btn-secondary {
+  background: rgba(255,255,255,0.04); color: white;
+  border: 1px solid rgba(191,90,242,0.25); padding: 1rem 2.4rem;
+  border-radius: 60px; font-family: 'Outfit'; font-weight: 600;
+  font-size: 1rem; cursor: pointer; transition: all 0.3s; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 10px;
+}
+.btn-secondary:hover { background: rgba(191,90,242,0.1); border-color: var(--neon-purple); }
+
+/* Hero trust bar */
+.hero-trust {
+  display: flex; gap: 2rem; justify-content: center; align-items: center;
+  margin-top: 3.5rem; flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease-out 0.5s both;
+}
+.trust-badge {
+  display: flex; align-items: center; gap: 10px;
+  padding: 0.6rem 1.2rem; border-radius: 12px;
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
+}
+.trust-badge .icon { font-size: 1.4rem; }
+.trust-badge .info { text-align: left; }
+.trust-badge .num {
+  font-family: 'Space Grotesk'; font-size: 1.1rem; font-weight: 700;
+  background: linear-gradient(135deg, var(--neon-teal), var(--gold));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.trust-badge .label { font-size: 0.68rem; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; }
+
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ===== SECTIONS ===== */
+section { padding: 6rem 2rem; position: relative; }
+.section-inner { max-width: 1200px; margin: 0 auto; }
+.section-label {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 0.72rem; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--neon-teal); font-weight: 600; margin-bottom: 1rem;
+}
+.section-label::before { content: ''; width: 30px; height: 2px; background: linear-gradient(90deg, var(--neon-teal), transparent); }
+.section-title {
+  font-family: 'Space Grotesk'; font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700; margin-bottom: 1rem; line-height: 1.15;
+}
+.section-subtitle { color: var(--text-muted); font-size: 1.05rem; max-width: 550px; line-height: 1.7; }
+.glow-line {
+  width: 80px; height: 3px; border-radius: 3px; margin: 1.5rem 0;
+  background: linear-gradient(90deg, var(--neon-teal), var(--neon-purple));
+  box-shadow: 0 0 15px rgba(0,245,212,0.3);
+}
+
+/* ===== SERVICES ===== */
+.services-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem; margin-top: 3rem;
+}
+.service-card {
+  background: rgba(255,255,255,0.02); border: 1px solid rgba(0,245,212,0.08);
+  border-radius: 20px; padding: 2.2rem 1.8rem; transition: all 0.5s cubic-bezier(0.16,1,0.3,1);
+  position: relative; overflow: hidden; cursor: pointer;
+}
+.service-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--neon-teal), var(--neon-purple));
+  opacity: 0; transition: opacity 0.4s;
+}
+.service-card::after {
+  content: ''; position: absolute; inset: 0; border-radius: 20px;
+  background: radial-gradient(circle at 50% 0%, rgba(0,245,212,0.06) 0%, transparent 60%);
+  opacity: 0; transition: opacity 0.5s;
+}
+.service-card:hover { transform: translateY(-10px); background: rgba(0,245,212,0.03);
+  border-color: rgba(0,245,212,0.2); box-shadow: 0 25px 60px rgba(0,0,0,0.4); }
+.service-card:hover::before { opacity: 1; }
+.service-card:hover::after { opacity: 1; }
+.service-card > * { position: relative; z-index: 1; }
+.service-icon {
+  width: 56px; height: 56px; border-radius: 14px;
+  background: linear-gradient(135deg, rgba(0,245,212,0.15), rgba(191,90,242,0.1));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.6rem; margin-bottom: 1.3rem;
+}
+.service-card h3 { font-size: 1.2rem; margin-bottom: 0.6rem; font-weight: 700; }
+.service-card p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem; }
+.service-tag {
+  display: inline-block; padding: 0.3rem 0.8rem; border-radius: 20px;
+  background: rgba(0,245,212,0.1); border: 1px solid rgba(0,245,212,0.15);
+  font-size: 0.72rem; color: var(--neon-teal); font-weight: 600; letter-spacing: 0.5px;
+}
+
+/* ===== PARALLAX DIVIDER ===== */
+.parallax-divider {
+  height: 300px; position: relative; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, rgba(0,245,212,0.05), rgba(191,90,242,0.05));
+}
+.parallax-divider .big-text {
+  font-family: 'Space Grotesk'; font-size: clamp(3rem, 10vw, 8rem);
+  font-weight: 900; opacity: 0.03; white-space: nowrap;
+  background: linear-gradient(90deg, var(--neon-teal), var(--neon-purple));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  animation: marquee 20s linear infinite;
+}
+@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.parallax-quote {
+  position: absolute; text-align: center; padding: 0 2rem;
+}
+.parallax-quote p {
+  font-size: clamp(1.2rem, 3vw, 2rem); font-weight: 300; font-style: italic;
+  color: rgba(255,255,255,0.6); max-width: 700px; line-height: 1.5;
+}
+.parallax-quote .attr { color: var(--neon-teal); font-size: 0.9rem; margin-top: 1rem; font-style: normal; font-weight: 600; }
+
+/* ===== REVIEWS ===== */
+.reviews-section { background: linear-gradient(180deg, rgba(0,245,212,0.02), transparent, rgba(191,90,242,0.02)); }
+.reviews-wrapper { overflow: hidden; margin-top: 3rem; }
+.reviews-auto {
+  display: flex; gap: 1.5rem; width: max-content;
+  animation: scrollReviews 35s linear infinite;
+}
+.reviews-auto:hover { animation-play-state: paused; }
+@keyframes scrollReviews { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.review-card {
+  min-width: 330px; max-width: 370px; flex-shrink: 0;
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(0,245,212,0.08);
+  border-radius: 20px; padding: 2rem; transition: all 0.3s;
+}
+.review-card:hover { border-color: rgba(0,245,212,0.25); background: rgba(0,245,212,0.04);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
+.review-stars { color: var(--gold); font-size: 1rem; margin-bottom: 1rem; letter-spacing: 2px; }
+.review-text { color: var(--gray-light); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.5rem; font-style: italic; opacity: 0.9; }
+.review-author { display: flex; align-items: center; gap: 12px; }
+.review-avatar {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--neon-teal), var(--neon-purple));
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 0.85rem; color: var(--purple-deep);
+}
+.review-name { font-weight: 600; font-size: 0.88rem; }
+.review-source { font-size: 0.72rem; color: var(--text-muted); }
+
+/* ===== WHY US ===== */
+.trust-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem; margin-top: 3rem;
+}
+.trust-item {
+  padding: 2rem 1.5rem; text-align: center; border-radius: 20px;
+  background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.04);
+  transition: all 0.4s;
+}
+.trust-item:hover { border-color: rgba(0,245,212,0.15); transform: translateY(-5px); }
+.trust-icon { font-size: 2.2rem; margin-bottom: 1rem; }
+.trust-item h4 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+.trust-item p { color: var(--text-muted); font-size: 0.85rem; line-height: 1.55; }
+
+/* ===== BOOKING FORM ===== */
+.booking-section { background: linear-gradient(180deg, transparent, rgba(0,245,212,0.03), transparent); }
+.form-container {
+  max-width: 650px; margin: 3rem auto 0;
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(0,245,212,0.1);
+  border-radius: 24px; padding: 3rem; position: relative; overflow: hidden;
+}
+.form-container::before {
+  content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+  background: conic-gradient(from 0deg, transparent, rgba(0,245,212,0.03), transparent, rgba(191,90,242,0.03), transparent 60%);
+  animation: formGlow 8s linear infinite;
+}
+@keyframes formGlow { 100% { transform: rotate(360deg); } }
+.form-inner { position: relative; z-index: 1; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+.form-group { margin-bottom: 1rem; }
+.form-group label {
+  display: block; font-size: 0.75rem; font-weight: 600; color: var(--neon-teal);
+  margin-bottom: 0.5rem; letter-spacing: 1.5px; text-transform: uppercase;
+}
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; padding: 0.85rem 1.1rem; border-radius: 12px;
+  border: 1px solid rgba(0,245,212,0.12); background: rgba(13,2,33,0.9);
+  color: var(--white); font-family: 'Outfit'; font-size: 0.95rem;
+  transition: all 0.3s; outline: none;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  border-color: var(--neon-teal); box-shadow: 0 0 25px rgba(0,245,212,0.1);
+}
+.form-group input::placeholder, .form-group textarea::placeholder { color: rgba(184,169,204,0.4); }
+.form-group select {
+  cursor: pointer; appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2300f5d4' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 1rem center;
+}
+.form-group select option { background: var(--purple-deep); }
+.form-group textarea { resize: vertical; min-height: 90px; }
+.form-submit {
+  width: 100%; padding: 1.1rem; border: none; border-radius: 14px;
+  background: linear-gradient(135deg, var(--neon-teal), var(--teal-dark));
+  color: var(--purple-deep); font-family: 'Outfit'; font-weight: 800;
+  font-size: 1.05rem; cursor: pointer; transition: all 0.4s;
+  box-shadow: 0 8px 30px rgba(0,245,212,0.2); letter-spacing: 0.5px;
+}
+.form-submit:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(0,245,212,0.35); }
+.form-note { text-align: center; margin-top: 1rem; font-size: 0.78rem; color: var(--text-muted); }
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 4rem 2rem calc(2rem + env(safe-area-inset-bottom, 0px));
+  background: rgba(0,0,0,0.4);
+  border-top: 1px solid rgba(0,245,212,0.06);
+}
+.footer-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem;
+}
+.footer-brand p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.6; max-width: 300px; margin-top: 1rem; }
+.footer-col h4 { font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; color: var(--neon-teal); margin-bottom: 1rem; }
+.footer-col a { display: block; color: var(--text-muted); text-decoration: none; font-size: 0.88rem; margin-bottom: 0.7rem; transition: color 0.3s; }
+.footer-col a:hover { color: var(--neon-teal); }
+.footer-bottom {
+  max-width: 1200px; margin: 3rem auto 0; padding-top: 2rem;
+  border-top: 1px solid rgba(0,245,212,0.06);
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.78rem; color: var(--text-muted);
+}
+
+/* ===== FLOATING TEXT BTN ===== */
+.float-text {
+  position: fixed; bottom: calc(2rem + env(safe-area-inset-bottom, 0px)); right: calc(2rem + env(safe-area-inset-right, 0px)); z-index: 999;
+  padding: 0.8rem 1.6rem; border-radius: 50px;
+  background: linear-gradient(135deg, var(--neon-teal), var(--teal-dark));
+  display: flex; align-items: center; gap: 8px;
+  box-shadow: 0 8px 30px rgba(0,245,212,0.3);
+  cursor: pointer; transition: all 0.3s; text-decoration: none;
+  color: var(--purple-deep); font-weight: 700; font-size: 0.9rem;
+  animation: floatBounce 3s ease-in-out infinite;
+}
+.float-text:hover { transform: scale(1.05); box-shadow: 0 12px 40px rgba(0,245,212,0.5); }
+@keyframes floatBounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+
+/* ===== SUCCESS MODAL ===== */
+.modal-overlay {
+  display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7); z-index: 2000; align-items: center; justify-content: center;
+  backdrop-filter: blur(10px);
+}
+.modal-overlay.active { display: flex; }
+.modal {
+  background: var(--purple-dark); border: 1px solid rgba(0,245,212,0.2);
+  border-radius: 24px; padding: 3rem; text-align: center; max-width: 420px;
+  animation: modalPop 0.4s cubic-bezier(0.16,1,0.3,1);
+}
+@keyframes modalPop { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.modal .check { font-size: 3.5rem; margin-bottom: 1rem; }
+.modal h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+.modal p { color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.92rem; }
+.modal-close {
+  background: linear-gradient(135deg, var(--neon-teal), var(--teal-dark));
+  color: var(--purple-deep); border: none; padding: 0.7rem 2rem;
+  border-radius: 50px; font-family: 'Outfit'; font-weight: 700; cursor: pointer;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .mobile-toggle { display: block; }
+  .nav-links.open {
+    display: flex; flex-direction: column; position: absolute;
+    top: 100%; left: 0; right: 0; background: rgba(13,2,33,0.98);
+    padding: 2rem; gap: 1.5rem; border-bottom: 1px solid rgba(0,245,212,0.1);
+  }
+  .hero { min-height: 90vh; min-height: 90dvh; padding: 6rem 1.5rem 3rem; }
+  .hero-trust { gap: 1rem; }
+  .trust-badge { padding: 0.5rem 0.8rem; }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+  section { padding: 4rem 1.5rem; }
+  .review-card { min-width: 290px; }
+  .form-container { padding: 2rem 1.5rem; }
+  .parallax-divider { height: 200px; }
+}
+@media (max-width: 480px) {
+  .hero h1 { font-size: 2.1rem; }
+  .hero-buttons { flex-direction: column; align-items: center; }
+  .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+  .trust-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* iOS / mobile performance & touch fixes */
+@media (hover: none) and (pointer: coarse) {
+  .orb { display: none; }
+  .cursor-glow { display: none; }
+  .hero::before { animation: none; }
+  .paw { animation-duration: 40s; }
+  .bg-glow { position: absolute; }
+  * { -webkit-tap-highlight-color: transparent; }
+  .service-card:hover, .trust-item:hover, .review-card:hover { transform: none; }
+}
+
+/* iOS safe area padding for landscape */
+@supports (padding: env(safe-area-inset-left)) {
+  .nav-inner, .section-inner, .footer-inner, .footer-bottom {
+    padding-left: env(safe-area-inset-left, 0px);
+    padding-right: env(safe-area-inset-right, 0px);
+  }
+}
+
+/* ===== PAW PRINT DECORATIONS ===== */
+.paw-trail {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 0; overflow: hidden;
+}
+.paw {
+  position: absolute; opacity: 0.025; font-size: 2rem;
+  animation: pawDrift 30s linear infinite;
+}
+.paw:nth-child(1) { left: 5%; top: -5%; animation-delay: 0s; font-size: 1.5rem; transform: rotate(-25deg); }
+.paw:nth-child(2) { left: 15%; top: -5%; animation-delay: 4s; font-size: 2.2rem; transform: rotate(15deg); }
+.paw:nth-child(3) { left: 30%; top: -5%; animation-delay: 8s; font-size: 1.8rem; transform: rotate(-40deg); }
+.paw:nth-child(4) { left: 50%; top: -5%; animation-delay: 12s; font-size: 2.5rem; transform: rotate(30deg); }
+.paw:nth-child(5) { left: 70%; top: -5%; animation-delay: 16s; font-size: 1.6rem; transform: rotate(-15deg); }
+.paw:nth-child(6) { left: 85%; top: -5%; animation-delay: 20s; font-size: 2rem; transform: rotate(45deg); }
+.paw:nth-child(7) { left: 40%; top: -5%; animation-delay: 24s; font-size: 1.4rem; transform: rotate(-60deg); }
+.paw:nth-child(8) { left: 60%; top: -5%; animation-delay: 28s; font-size: 2.3rem; transform: rotate(10deg); }
+.paw:nth-child(9) { left: 25%; top: -5%; animation-delay: 6s; font-size: 1.7rem; transform: rotate(20deg); }
+.paw:nth-child(10) { left: 75%; top: -5%; animation-delay: 22s; font-size: 2.1rem; transform: rotate(-30deg); }
+@keyframes pawDrift {
+  0% { transform: translateY(-5vh) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.03; }
+  90% { opacity: 0.03; }
+  100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+}
+
+/* ===== DOG SILHOUETTES ===== */
+.dog-silhouette {
+  position: absolute; pointer-events: none; z-index: 0;
+}
+.silhouette-poodle {
+  width: 120px; height: 120px; opacity: 0.03; right: 5%; top: 15%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%2300f5d4' d='M65 20c-3-5-8-8-13-7s-9 5-10 10c-5-2-11-1-14 3s-3 10 0 14c-5 3-8 9-6 15s7 10 13 10h2c1 4 5 7 9 8v7h-5c-2 0-3 1-3 3h20c0-2-1-3-3-3h-5v-7c4-1 8-4 9-8h2c6 0 11-4 13-10s-1-12-6-15c3-4 3-10 0-14s-9-5-14-3c-1-5-5-9-10-10z'/%3E%3C/svg%3E") no-repeat center;
+}
+.silhouette-schnauzer {
+  width: 100px; height: 100px; opacity: 0.03; left: 3%; bottom: 30%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23bf5af2' d='M25 30l-5-15 10 5 5-8 5 8 10-5-5 15h-2c0-3-4-5-8-5s-8 2-8 5h-2zm-3 5c-3 0-5 3-5 7v15c0 4 2 7 5 7h3v12h6v-12h8v12h6v-12h3c3 0 5-3 5-7v-15c0-4-2-7-5-7h-26zm5 7c2 0 3 1 3 3s-1 3-3 3-3-1-3-3 1-3 3-3zm16 0c2 0 3 1 3 3s-1 3-3 3-3-1-3-3 1-3 3-3z'/%3E%3C/svg%3E") no-repeat center;
+}
+
+/* ===== SC PALMETTO (subtle) ===== */
+.sc-badge {
+  position: absolute; bottom: 8%; right: 4%; opacity: 0.02;
+  width: 150px; height: 150px; pointer-events: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%2300f5d4' d='M50 15c-2 0-4 2-4 4v25c-8-12-20-22-22-20s5 17 15 28h-14c-2 0-3 2-2 4l5 10h44l5-10c1-2 0-4-2-4h-14c10-11 17-26 15-28s-14 8-22 20v-25c0-2-2-4-4-4z'/%3E%3Ccircle fill='%2300f5d4' cx='50' cy='78' r='6'/%3E%3C/svg%3E") no-repeat center;
+}
+
+/* ===== APP-LIKE MICRO INTERACTIONS ===== */
+.service-card {
+  transform-style: preserve-3d; perspective: 1000px;
+}
+.service-card:active { transform: scale(0.97); transition: transform 0.1s; }
+.btn-primary:active { transform: scale(0.95); }
+.nav-cta:active { transform: scale(0.92); }
+.form-submit:active { transform: scale(0.97); }
+
+/* Haptic-feel pulse on focus */
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  animation: focusPulse 0.3s ease-out;
+}
+@keyframes focusPulse {
+  0% { box-shadow: 0 0 0 0 rgba(0,245,212,0.4); }
+  70% { box-shadow: 0 0 0 8px rgba(0,245,212,0); }
+  100% { box-shadow: 0 0 25px rgba(0,245,212,0.1); }
+}
+
+/* Smooth page-app transitions */
+section { transition: opacity 0.6s ease; }
+
+/* Glow cursor trail effect */
+.cursor-glow {
+  position: fixed; width: 200px; height: 200px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,245,212,0.04) 0%, transparent 70%);
+  pointer-events: none; z-index: 0; transition: transform 0.15s ease-out;
+  transform: translate(-50%, -50%);
+}
+
+/* Paw print dividers between sections */
+.section-paw-divider {
+  text-align: center; padding: 1rem 0; opacity: 0.08; font-size: 1.2rem;
+  letter-spacing: 2rem;
+}
+
+/* Reveal - now handled by GSAP, but keep CSS fallback */
+.reveal { opacity: 0; transform: translateY(40px); }
+.reveal.visible { opacity: 1; transform: translateY(0); transition: all 0.8s cubic-bezier(0.16,1,0.3,1); }
+
+/* ===== PAW CURSOR ===== */
+body { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ctext y='20' font-size='18'%3E&#128062;%3C/text%3E%3C/svg%3E") 12 12, auto; }
+a, button, .service-card, .trust-item, .nav-cta, .btn-primary, .btn-secondary, .form-submit, .float-text {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'%3E%3Ctext y='22' font-size='22'%3E&#128054;%3C/text%3E%3C/svg%3E") 14 14, pointer;
+}
+
+/* ===== ANIMATED BONE DIVIDER ===== */
+.bone-divider {
+  display: flex; align-items: center; justify-content: center; gap: 1.5rem;
+  padding: 2.5rem 0; opacity: 0.15; overflow: hidden;
+}
+.bone-divider .bone {
+  font-size: 1.4rem; display: inline-block;
+  animation: boneSpin 4s ease-in-out infinite;
+}
+.bone-divider .bone:nth-child(2) { animation-delay: 0.3s; }
+.bone-divider .bone:nth-child(3) { animation-delay: 0.6s; }
+.bone-divider .bone:nth-child(4) { animation-delay: 0.9s; }
+.bone-divider .bone:nth-child(5) { animation-delay: 1.2s; }
+.bone-divider .bone:nth-child(6) { animation-delay: 1.5s; }
+.bone-divider .bone:nth-child(7) { animation-delay: 1.8s; }
+.bone-divider .paw-walk {
+  font-size: 1.2rem; display: inline-block;
+  animation: pawWalk 2s ease-in-out infinite;
+}
+@keyframes boneSpin {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(15deg) scale(1.1); }
+  50% { transform: rotate(0deg) scale(1); }
+  75% { transform: rotate(-15deg) scale(1.1); }
+}
+@keyframes pawWalk {
+  0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+  25% { transform: translateY(-8px) rotate(-10deg); opacity: 1; }
+  50% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+  75% { transform: translateY(-8px) rotate(10deg); opacity: 1; }
+}
+
+/* ===== FLOATING DOG TREATS (playful bg) ===== */
+.treat-float {
+  position: fixed; pointer-events: none; z-index: 0; opacity: 0.04;
+  font-size: 2rem; animation: treatDrift 25s linear infinite;
+}
+@keyframes treatDrift {
+  0% { transform: translate(0, 100vh) rotate(0deg); }
+  100% { transform: translate(50px, -120vh) rotate(720deg); }
+}
+
+/* ===== WIGGLY HEADING UNDERLINE ===== */
+.section-title { position: relative; display: inline-block; }
+
+/* ===== GOOGLE REVIEWS WIDGET AREA ===== */
+.reviews-widget-area {
+  max-width: 1000px; margin: 2rem auto 0; min-height: 100px;
+  border-radius: 16px; overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-glow"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+<div class="orb orb-4"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- Floating paw prints -->
+<div class="paw-trail">
+  <div class="paw">&#128062;</div><div class="paw">&#128054;</div><div class="paw">&#128062;</div><div class="paw">&#128041;</div>
+  <div class="paw">&#128062;</div><div class="paw">&#128021;</div><div class="paw">&#128062;</div><div class="paw">&#128054;</div>
+  <div class="paw">&#128062;</div><div class="paw">&#128062;</div>
+</div>
+
+<!-- Dog silhouette decorations -->
+<div class="dog-silhouette silhouette-poodle"></div>
+<div class="dog-silhouette silhouette-schnauzer"></div>
+<div class="sc-badge"></div>
+
+<!-- Floating dog treats for playful energy -->
+<div class="treat-float" style="left:8%;animation-delay:0s;">&#129460;</div>
+<div class="treat-float" style="left:22%;animation-delay:5s;font-size:1.5rem;">&#128021;</div>
+<div class="treat-float" style="left:45%;animation-delay:10s;">&#127934;</div>
+<div class="treat-float" style="left:65%;animation-delay:15s;font-size:2.5rem;">&#128062;</div>
+<div class="treat-float" style="left:80%;animation-delay:20s;">&#129460;</div>
+<div class="treat-float" style="left:92%;animation-delay:8s;font-size:1.8rem;">&#128041;</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="logo">YUPPY PUPPY<span>Private Pet Spa &bull; Since 2008</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#book">Book</a></li>
+    </ul>
+    <a href="sms:8039807387" class="nav-cta">Text Us</a>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-badge"><span class="dot"></span> Now Accepting Select New Clients</div>
+    <h1>Rock Hill's Premier Pet&nbsp;Experience</h1>
+    <p>Exclusive one-on-one grooming, boarding, daycare & luxury baths &#8212; no shared spaces, no walk-ins, no exceptions. By private appointment only since 2008.</p>
+    <div class="hero-buttons">
+      <a href="sms:8039807387&body=Hi!%20I'd%20like%20to%20book%20an%20appointment%20for%20my%20pet.%20" class="btn-primary">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"/><path d="M7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>
+        Text Us Now
+      </a>
+      <a href="#book" class="btn-secondary">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Request Appointment
+      </a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-badge">
+        <div class="icon">&#11088;</div>
+        <div class="info"><div class="num">4.8 / 5.0</div><div class="label">Google Rating</div></div>
+      </div>
+      <div class="trust-badge">
+        <div class="icon">&#128172;</div>
+        <div class="info"><div class="num">100+</div><div class="label">5-Star Reviews</div></div>
+      </div>
+      <div class="trust-badge">
+        <div class="icon">&#127942;</div>
+        <div class="info"><div class="num">18+ Years</div><div class="label">Private Care Since '08</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <div class="section-label reveal">Our Services</div>
+    <h2 class="section-title reveal">Exclusive Private Pet Services</h2>
+    <p class="section-subtitle reveal">Every session is one-on-one behind closed doors. No other animals present. Just your pet, our full attention, and 18+ years of expertise.</p>
+    <div class="glow-line reveal"></div>
+    <div class="services-grid">
+      <div class="service-card reveal reveal-d1">
+        <div class="service-icon">&#128041;&#9986;&#65039;</div>
+        <h3>Private Signature Grooming</h3>
+        <p>Full private groom &#8212; luxury shampoo, conditioning, blueberry facial, sanitary trims, ear cleaning, gland expression & a breed-perfect cut. Just your pet, no distractions.</p>
+        <span class="service-tag">Most Popular</span>
+      </div>
+      <div class="service-card reveal reveal-d2">
+        <div class="service-icon">&#128054;&#129767;</div>
+        <h3>Luxury Spa Bath</h3>
+        <p>Premium private bath & blow-dry with deluxe conditioner, thorough brush-out, nail trim, ear cleaning, and a fresh bandanna. Spa-level pampering.</p>
+        <span class="service-tag">Quick & Fresh</span>
+      </div>
+      <div class="service-card reveal reveal-d3">
+        <div class="service-icon">&#128021;&#127769;</div>
+        <h3>Private Overnight Boarding</h3>
+        <p>Your pet sleeps in their own private space &#8212; zero shared kennels, zero mingling. Fenced grass play area, around-the-clock supervision, and photo updates sent to you.</p>
+        <span class="service-tag">Overnight</span>
+      </div>
+      <div class="service-card reveal reveal-d4">
+        <div class="service-icon">&#128062;&#9728;&#65039;</div>
+        <h3>Private Daycare</h3>
+        <p>Supervised daytime care in our private facility with outdoor play, enrichment activities, and plenty of love &#8212; all while you're at work or out for the day.</p>
+        <span class="service-tag">Drop-Off</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="bone-divider"><span class="bone">&#129460;</span><span class="paw-walk">&#128062;</span><span class="bone">&#129460;</span><span class="paw-walk">&#128054;</span><span class="bone">&#129460;</span><span class="paw-walk">&#128062;</span><span class="bone">&#129460;</span></div>
+
+<!-- PARALLAX DIVIDER -->
+<div class="parallax-divider">
+  <div class="big-text">YUPPY PUPPY &bull; ELITE PRIVATE PET SPA &bull; EST 2008 &bull; ROCK HILL SC &bull; &#128062; &bull; YUPPY PUPPY &bull; ELITE PRIVATE PET SPA &bull; EST 2008 &bull; ROCK HILL SC &bull; &#128062; &bull;&nbsp;</div>
+  <div class="parallax-quote">
+    <p>"The best investment you can make is in the care of those who love you unconditionally."</p>
+    <div class="attr">&#8212; Sanjay & Tivanie Vyas, Founders</div>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<section class="reviews-section" id="reviews">
+  <div class="section-inner">
+    <div class="section-label reveal">Client Love</div>
+    <h2 class="section-title reveal">What Pet Parents Say</h2>
+    <p class="section-subtitle reveal">Real reviews from real families who trust us with their fur babies.</p>
+    <div class="glow-line reveal"></div>
+  </div>
+  <div class="reviews-wrapper">
+    <div class="reviews-auto" id="reviewsTrack">
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"WOW! The owner is extremely sweet, texts back quick, keeps you updated, explains everything well, and even gave her a bath for free after she got dirty during outside play time! Amazing prices and the facility is super clean. Truly awesome!"</p><div class="review-author"><div class="review-avatar">A</div><div><div class="review-name">Amanda K.</div><div class="review-source">Google Review</div></div></div></div>
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"This place is amazing!! My two Jack Russell Terriers are kept superbly groomed and are always beautiful and happy after a visit. Highly recommend to anyone looking for top-notch pet care in Rock Hill."</p><div class="review-author"><div class="review-avatar">M</div><div><div class="review-name">Michelle R.</div><div class="review-source">Google Review</div></div></div></div>
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Superb grooming! I highly recommend The Yuppy Puppy for their professionalism and kindness to pets. FIVE STARS! They treat every dog like family. Can't say enough good things about this place."</p><div class="review-author"><div class="review-avatar">J</div><div><div class="review-name">Jennifer T.</div><div class="review-source">Google Review</div></div></div></div>
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Sanjay and Tivanie are absolutely wonderful with our babies. They go above and beyond every single time. Our dogs always come back looking and smelling incredible. Best in Rock Hill hands down!"</p><div class="review-author"><div class="review-avatar">D</div><div><div class="review-name">David L.</div><div class="review-source">Google Review</div></div></div></div>
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"The private boarding is what sold us. No mingling, personal attention, and our fur baby always comes home happy and clean. Wouldn't trust anyone else with our dog. Yuppy Puppy is the real deal!"</p><div class="review-author"><div class="review-avatar">S</div><div><div class="review-name">Sarah M.</div><div class="review-source">Google Review</div></div></div></div>
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"From the moment we reached out, the communication was top tier. Personal care, immaculate facility, and our pup was treated like royalty. The grooming quality is unmatched anywhere we've been."</p><div class="review-author"><div class="review-avatar">R</div><div><div class="review-name">Rachel W.</div><div class="review-source">Google Review</div></div></div></div>
+      <!-- Duplicate for infinite scroll -->
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"WOW! The owner is extremely sweet, texts back quick, keeps you updated, explains everything well, and even gave her a bath for free after she got dirty during outside play time! Amazing prices and the facility is super clean. Truly awesome!"</p><div class="review-author"><div class="review-avatar">A</div><div><div class="review-name">Amanda K.</div><div class="review-source">Google Review</div></div></div></div>
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"This place is amazing!! My two Jack Russell Terriers are kept superbly groomed and are always beautiful and happy after a visit. Highly recommend to anyone looking for top-notch pet care in Rock Hill."</p><div class="review-author"><div class="review-avatar">M</div><div><div class="review-name">Michelle R.</div><div class="review-source">Google Review</div></div></div></div>
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Superb grooming! I highly recommend The Yuppy Puppy for their professionalism and kindness to pets. FIVE STARS! They treat every dog like family. Can't say enough good things about this place."</p><div class="review-author"><div class="review-avatar">J</div><div><div class="review-name">Jennifer T.</div><div class="review-source">Google Review</div></div></div></div>
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Sanjay and Tivanie are absolutely wonderful with our babies. They go above and beyond every single time. Our dogs always come back looking and smelling incredible. Best in Rock Hill hands down!"</p><div class="review-author"><div class="review-avatar">D</div><div><div class="review-name">David L.</div><div class="review-source">Google Review</div></div></div></div>
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"The private boarding is what sold us. No mingling, personal attention, and our fur baby always comes home happy and clean. Wouldn't trust anyone else with our dog. Yuppy Puppy is the real deal!"</p><div class="review-author"><div class="review-avatar">S</div><div><div class="review-name">Sarah M.</div><div class="review-source">Google Review</div></div></div></div>
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"From the moment we reached out, the communication was top tier. Personal care, immaculate facility, and our pup was treated like royalty. The grooming quality is unmatched anywhere we've been."</p><div class="review-author"><div class="review-avatar">R</div><div><div class="review-name">Rachel W.</div><div class="review-source">Google Review</div></div></div></div>
+    </div>
+  </div>
+  <!-- Live Google Reviews Widget -->
+  <div class="reviews-widget-area" id="googleReviews">
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-b437ab48-5e7c-4787-8a3a-1b1e6a3c4d9e" data-elfsight-app-lazy></div>
+  </div>
+</section>
+
+<div class="bone-divider"><span class="bone">&#129460;</span><span class="paw-walk">&#128062;</span><span class="bone">&#129460;</span><span class="paw-walk">&#128054;</span><span class="bone">&#129460;</span><span class="paw-walk">&#128062;</span><span class="bone">&#129460;</span></div>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="section-inner">
+    <div class="section-label reveal">Why Yuppy Puppy</div>
+    <h2 class="section-title reveal">What Sets Us Apart</h2>
+    <div class="glow-line reveal"></div>
+    <div class="trust-grid">
+      <div class="trust-item reveal reveal-d1"><div class="trust-icon">&#128021;&#8205;&#129466;&#128274;</div><h4>100% Private Facility</h4><p>No walk-ins. No shared spaces. No other animals present during your pet's visit. Completely private, completely focused.</p></div>
+      <div class="trust-item reveal reveal-d2"><div class="trust-icon">&#128062;&#128241;</div><h4>Text-First Booking</h4><p>Text us anytime at 803-980-7387. Fast responses, appointment confirmations, and photo updates &#8212; all by text.</p></div>
+      <div class="trust-item reveal reveal-d3"><div class="trust-icon">&#128054;&#11088;</div><h4>100+ Five-Star Reviews</h4><p>Consistently top-rated in Rock Hill with 18+ years of trust built one pet at a time.</p></div>
+      <div class="trust-item reveal reveal-d4"><div class="trust-icon">&#128041;&#127969;</div><h4>Confidential Location</h4><p>Our private facility address is shared only with confirmed clients &#8212; ensuring a calm, safe, distraction-free environment for every pet.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="bone-divider"><span class="bone">&#129460;</span><span class="paw-walk">&#128062;</span><span class="bone">&#129460;</span><span class="paw-walk">&#128054;</span><span class="bone">&#129460;</span><span class="paw-walk">&#128062;</span><span class="bone">&#129460;</span></div>
+
+<!-- BOOKING -->
+<section class="booking-section" id="book">
+  <div class="section-inner" style="text-align:center;">
+    <div class="section-label reveal">Ready?</div>
+    <h2 class="section-title reveal">Request Your Appointment</h2>
+    <p class="section-subtitle reveal" style="margin:0 auto;">Fill out the form below &#8212; your request is texted and emailed directly to us. We'll personally reach out to confirm your private appointment.</p>
+    <div class="glow-line reveal" style="margin:1.5rem auto;"></div>
+    <div class="form-container reveal">
+      <form class="form-inner" id="bookingForm" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group"><label for="fname">Your Name</label><input type="text" id="fname" name="name" placeholder="First & Last" required autocomplete="name"></div>
+          <div class="form-group"><label for="phone">Phone / Text</label><input type="tel" id="phone" name="phone" placeholder="(803) 555-1234" required autocomplete="tel"></div>
+        </div>
+        <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email"></div>
+        <div class="form-row">
+          <div class="form-group"><label for="petname">Pet's Name</label><input type="text" id="petname" name="petname" placeholder="Your fur baby's name" required></div>
+          <div class="form-group"><label for="breed">Breed</label><input type="text" id="breed" name="breed" placeholder="e.g. Golden Retriever" required list="breedList">
+            <datalist id="breedList"><option value="Labrador Retriever"><option value="Golden Retriever"><option value="German Shepherd"><option value="French Bulldog"><option value="Bulldog"><option value="Poodle"><option value="Beagle"><option value="Rottweiler"><option value="Yorkshire Terrier"><option value="Dachshund"><option value="Boxer"><option value="Shih Tzu"><option value="Siberian Husky"><option value="Cavalier King Charles Spaniel"><option value="Doberman Pinscher"><option value="Miniature Schnauzer"><option value="Great Dane"><option value="Pomeranian"><option value="Chihuahua"><option value="Maltese"><option value="Jack Russell Terrier"><option value="Cocker Spaniel"><option value="Pitbull"><option value="Boston Terrier"><option value="Bernese Mountain Dog"><option value="Havanese"><option value="Mixed Breed"><option value="Cat"><option value="Other"></datalist></div>
+        </div>
+        <div class="form-group"><label for="service">Service Requested</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Choose a service...</option>
+            <option value="Signature Grooming">&#9986;&#65039; Signature Grooming</option>
+            <option value="Luxury Bath">&#128705; Luxury Bath</option>
+            <option value="Private Sleepover">&#127769; Private Sleepover Boarding</option>
+            <option value="Daycare">&#9728;&#65039; Daycare</option>
+            <option value="Multiple Services">&#128203; Multiple Services</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="prefdate">Preferred Date</label><input type="date" id="prefdate" name="prefdate" min="" style="color-scheme:dark"></div>
+          <div class="form-group"><label for="preftime">Preferred Time</label>
+            <select id="preftime" name="preftime">
+              <option value="" selected>No preference</option>
+              <option value="09:00">9:00 AM</option>
+              <option value="10:00">10:00 AM</option>
+              <option value="11:00">11:00 AM</option>
+              <option value="12:00">12:00 PM</option>
+              <option value="13:00">1:00 PM</option>
+              <option value="14:00">2:00 PM</option>
+              <option value="15:00">3:00 PM</option>
+              <option value="16:00">4:00 PM</option>
+            </select></div>
+        </div>
+        <div class="form-group"><label for="notes">Anything Else? <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text-muted)">(optional)</span></label>
+          <textarea id="notes" name="notes" placeholder="Special needs, questions, etc."></textarea></div>
+        <button type="submit" class="form-submit">Send Request &#8594;</button>
+        <input type="hidden" name="_subject" value="New Yuppy Puppy Appointment Request">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="#">
+        <input type="hidden" name="_template" value="table">
+        <p class="form-note">&#128241; Your request is texted to 803-980-7387 & emailed to us instantly. We respond within hours. No spam, ever.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">YUPPY PUPPY<span>Private Pet Spa &bull; Since 2008</span></div>
+      <p>Rock Hill's premier pet experience. Exclusive one-on-one grooming, boarding, daycare & luxury baths &#8212; by private appointment only since 2008. &#128062;</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#why">Why Us</a><a href="#book">Book Now</a>
+    </div>
+    <div class="footer-col">
+      <h4>Reach Us</h4>
+      <a href="sms:8039807387">&#128241; Text: 803-980-7387</a>
+      <a href="tel:8039807387">&#128222; Call: 803-980-7387</a>
+      <a href="mailto:yuppypuppysc@gmail.com">&#9993;&#65039; yuppypuppysc@gmail.com</a>
+      <a>&#128274; Private Facility &#8212; By Appointment Only</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&#169; 2008&#8211;2026 Yuppy Puppy Pet Spa & Boarding. All rights reserved.</span>
+    <span>Private Facility &bull; By Appointment Only</span>
+  </div>
+</footer>
+
+<!-- FLOATING TEXT BUTTON -->
+<a href="sms:8039807387&body=Hi!%20I'd%20like%20to%20book%20an%20appointment%20for%20my%20pet.%20" class="float-text" title="Text us!">
+  &#128172; Text Us
+</a>
+
+<!-- SUCCESS MODAL -->
+<div class="modal-overlay" id="successModal">
+  <div class="modal">
+    <div class="check">&#9989;</div>
+    <h3>Request Sent!</h3>
+    <p>We received your info and will text you shortly to confirm your appointment. Expect a response within a few hours!</p>
+    <button class="modal-close" onclick="document.getElementById('successModal').classList.remove('active')">Got it!</button>
+  </div>
+</div>
+
+<script>
+// Nav scroll
+const nb = document.getElementById('navbar');
+window.addEventListener('scroll', () => nb.classList.toggle('scrolled', window.scrollY > 50));
+
+// Mobile menu
+document.getElementById('mobileToggle').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('open'));
+document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open')));
+
+// Phone format
+// Set min date on date picker to today
+document.getElementById('prefdate').min = new Date().toISOString().split('T')[0];
+
+document.getElementById('phone').addEventListener('input', function(e) {
+  let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+  e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+});
+
+// Form submit &#8212; emails via FormSubmit.co + opens SMS to owner
+function handleSubmit(e) {
+  e.preventDefault();
+  const fd = new FormData(e.target);
+  const d = Object.fromEntries(fd);
+  var dateStr = d.prefdate || 'Flexible';
+  var timeStr = d.preftime ? new Date('2000-01-01T' + d.preftime).toLocaleTimeString('en-US', {hour:'numeric',minute:'2-digit'}) : 'Flexible';
+
+  fetch('https://formsubmit.co/ajax/yuppypuppysc@gmail.com', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({
+      name: d.name, phone: d.phone, email: d.email, petname: d.petname,
+      breed: d.breed, service: d.service, preferred_date: dateStr, preferred_time: timeStr,
+      notes: d.notes || 'None',
+      _subject: 'New Appointment Request \u2014 ' + d.petname + ' (' + d.service + ') ' + dateStr
+    })
+  }).then(r => r.json()).then(data => {
+    console.log('Email sent:', data);
+  }).catch(err => console.log('Email fallback needed:', err));
+
+  const smsBody = encodeURIComponent(
+    'NEW BOOKING REQUEST\nName: ' + d.name + '\nPhone: ' + d.phone +
+    '\nEmail: ' + d.email + '\nPet: ' + d.petname + ' (' + d.breed + ')' +
+    '\nService: ' + d.service + '\nDate: ' + dateStr + ' @ ' + timeStr +
+    (d.notes ? '\nNotes: ' + d.notes : '')
+  );
+  const smsLink = document.createElement('a');
+  smsLink.href = 'sms:8039807387&body=' + smsBody;
+  smsLink.style.display = 'none';
+  document.body.appendChild(smsLink);
+  smsLink.click();
+  document.body.removeChild(smsLink);
+  document.getElementById('successModal').classList.add('active');
+  e.target.reset();
+}
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    e.preventDefault();
+    const t = document.querySelector(this.getAttribute('href'));
+    if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+// Cursor glow (desktop only)
+const glow = document.getElementById('cursorGlow');
+if (window.matchMedia('(hover: hover)').matches) {
+  document.addEventListener('mousemove', (e) => {
+    const x = e.clientX / window.innerWidth;
+    const y = e.clientY / window.innerHeight;
+    document.querySelectorAll('.orb').forEach((orb, i) => {
+      const speed = (i + 1) * 15;
+      orb.style.transform = `translate(${(x - 0.5) * speed}px, ${(y - 0.5) * speed}px)`;
+    });
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+  });
+}
+
+// Touch ripple for mobile
+document.querySelectorAll('.service-card, .trust-item, .btn-primary, .btn-secondary, .nav-cta, .form-submit').forEach(el => {
+  el.addEventListener('touchstart', function() {
+    this.style.transition = 'transform 0.1s';
+    this.style.transform = 'scale(0.97)';
+  }, {passive: true});
+  el.addEventListener('touchend', function() {
+    this.style.transition = 'transform 0.3s cubic-bezier(0.16,1,0.3,1)';
+    this.style.transform = '';
+  }, {passive: true});
+});
+
+// ===== GSAP ANIMATIONS =====
+function initGSAP() {
+  if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
+    // Fallback: use IntersectionObserver if GSAP didn't load
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    return;
+  }
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Hero entrance - playful bounce
+  gsap.from('.hero-badge', { opacity: 0, y: 30, duration: 0.8, ease: 'back.out(1.7)' });
+  gsap.from('.hero h1', { opacity: 0, y: 50, scale: 0.95, duration: 1, delay: 0.15, ease: 'power3.out' });
+  gsap.from('.hero p', { opacity: 0, y: 30, duration: 0.8, delay: 0.3, ease: 'power2.out' });
+  gsap.from('.hero-buttons > *', { opacity: 0, y: 20, stagger: 0.15, duration: 0.6, delay: 0.45, ease: 'back.out(1.4)' });
+  gsap.from('.hero-trust .trust-badge', { opacity: 0, y: 20, scale: 0.9, stagger: 0.12, duration: 0.6, delay: 0.7, ease: 'back.out(1.7)' });
+
+  // Service cards - staggered with playful wiggle
+  gsap.from('.service-card', {
+    scrollTrigger: { trigger: '#services', start: 'top 80%' },
+    opacity: 0, y: 60, rotation: -2, stagger: 0.15, duration: 0.8, ease: 'back.out(1.4)'
+  });
+
+  // Section labels & titles
+  document.querySelectorAll('.section-label').forEach(el => {
+    gsap.from(el, {
+      scrollTrigger: { trigger: el, start: 'top 85%' },
+      opacity: 0, x: -30, duration: 0.6, ease: 'power2.out'
+    });
+  });
+  document.querySelectorAll('.section-title').forEach(el => {
+    gsap.from(el, {
+      scrollTrigger: { trigger: el, start: 'top 85%' },
+      opacity: 0, y: 40, duration: 0.8, ease: 'power3.out'
+    });
+  });
+  document.querySelectorAll('.glow-line').forEach(el => {
+    gsap.from(el, {
+      scrollTrigger: { trigger: el, start: 'top 90%' },
+      width: 0, duration: 0.8, ease: 'power2.out'
+    });
+  });
+
+  // Trust grid items - bounce in
+  gsap.from('.trust-item', {
+    scrollTrigger: { trigger: '#why', start: 'top 75%' },
+    opacity: 0, y: 50, scale: 0.9, stagger: 0.12, duration: 0.7, ease: 'back.out(1.5)'
+  });
+
+  // Booking form slide up
+  gsap.from('.form-container', {
+    scrollTrigger: { trigger: '#book', start: 'top 75%' },
+    opacity: 0, y: 80, duration: 1, ease: 'power3.out'
+  });
+
+  // Bone dividers - spin in from sides
+  document.querySelectorAll('.bone-divider').forEach(el => {
+    gsap.from(el.children, {
+      scrollTrigger: { trigger: el, start: 'top 90%' },
+      opacity: 0, scale: 0, rotation: 360, stagger: 0.08, duration: 0.5, ease: 'back.out(2)'
+    });
+  });
+
+  // Parallax divider text
+  gsap.to('.big-text', {
+    scrollTrigger: { trigger: '.parallax-divider', start: 'top bottom', end: 'bottom top', scrub: 1 },
+    x: -200, ease: 'none'
+  });
+
+  // Paw prints float with scroll parallax
+  gsap.utils.toArray('.paw').forEach((paw, i) => {
+    gsap.to(paw, {
+      scrollTrigger: { trigger: 'body', start: 'top top', end: 'bottom bottom', scrub: 2 },
+      y: `${300 + i * 80}`, rotation: 360 + i * 45, ease: 'none'
+    });
+  });
+
+  // Floating text button
+  gsap.from('.float-text', { opacity: 0, scale: 0, duration: 0.6, delay: 1.5, ease: 'back.out(2)' });
+
+  // Make all remaining .reveal elements visible (those not handled above)
+  document.querySelectorAll('.reveal').forEach(el => {
+    gsap.from(el, {
+      scrollTrigger: { trigger: el, start: 'top 88%' },
+      opacity: 0, y: 30, duration: 0.6, ease: 'power2.out',
+      onComplete: () => el.classList.add('visible')
+    });
+  });
+}
+
+// Init GSAP when ready
+if (document.readyState === 'complete') {
+  setTimeout(initGSAP, 100);
+} else {
+  window.addEventListener('load', () => setTimeout(initGSAP, 100));
+}
+</script>
+</body>
+</html>
